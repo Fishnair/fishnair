@@ -230,13 +230,60 @@
               </div>
             </div>
             <div class="area-footer">
-              <a href="add-prod.html" class="main-button">Adicionar Novo Cupom de Desconto</a>
+              <a id="giftcard-add" class="main-button">Adicionar Novo Cupom de Desconto</a>
             </div>
           </div>
         </div>
       </main>
     </div>
   </div>
+
+  <div id="add-giftcard" class="addition-bg hidden">
+    <div class="addition-area">
+      <div class="addition-header">
+        <span class="addition-header-title">Adicionar Cupom de Desconto</span>
+        <div id="add-giftcard-close" class="addition-close"></div>
+      </div>
+      <div class="addition-body">
+        <label class="addition-title">Código do Cupom</label>
+        <input type="text" class="addition-input-text">
+        
+        <div class="row no-gutters">
+          <div class="col-6">
+            <label class="addition-title">Desconto</label>
+            <input type="text" class="addition-input-text">
+          </div>
+
+          <div class="col-6">
+            <label class="addition-title">Tipo de Desconto</label>
+            <div class="addition-select-area">
+              <select class="addition-select">
+                <option>Dinheiro</option>
+                <option>Porcentagem</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row no-gutters">
+          <div class="col-6">
+            <label class="addition-title">Valor Mínimo</label>
+            <input type="text" class="addition-input-text">
+          </div>
+
+          <div class="col-6">
+            <label class="addition-title">Limite de Usos</label>
+            <input type="text" class="addition-input-text">
+          </div>
+        </div>
+      </div>
+      
+      <div class="edit-prod-footer">
+        <button class="main-button">Adicionar</button>
+      </div>
+    </div>
+  </div>
+
 
   <div class="sidebar-fade"></div>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>

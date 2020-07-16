@@ -61,5 +61,17 @@ $(document).ready(function () {
     $('#confirmar-envio').addClass('hidden');
     $('#info-prod').addClass('hidden');
   });
+
+
+
+  $('#giftcard-add').click(function(){
+    $('#add-giftcard').removeClass('hidden');
+  });	
+
+  $('#add-giftcard-close').click(function(){
+    $('#add-giftcard').addClass('hidden');
+  });	
+  
+
 });
 
