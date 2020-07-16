@@ -1,0 +1,15 @@
+.ml-auto{
+  margin-left: auto !important;
+}
+.mr-auto{
+  margin-right: auto !important;
+}
+
+.hidden{
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+.scrool-x{
+  overflow-x: scroll;
+}
