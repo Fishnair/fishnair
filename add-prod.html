@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DashBoard</title>
-
-  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/rules.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
@@ -19,7 +19,6 @@
       <li class="sidebar-nav-item">
         <a class="sidebar-nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
       </li>
-  
       <li class="sidebar-nav-dropdown">
         <a class="sidebar-nav-dropdown-toggle">
           <i class="fas fa-boxes"></i>Produtos
@@ -33,13 +32,20 @@
           </li>
         </ul>
       </li>
-
+      <li class="sidebar-nav-item">
+        <a class="sidebar-nav-link" href="giftcard.html"><i class="fas fa-gift"></i>Cupom de Desconto</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="sidebar-nav-link" href="edit.html"><i class="fas fa-edit"></i>Editar Textos</a>
+      </li>
       <li class="sidebar-nav-item">
         <a class="sidebar-nav-link" href="vendas.html"><i class="fas fa-shopping-cart"></i>Vendas</a>
       </li>
-
       <li class="sidebar-nav-item">
         <a class="sidebar-nav-link" href="entregas.html"><i class="fas fa-truck"></i>Entregas</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="sidebar-nav-link" href="suporte.html"><i class="fas fa-life-ring"></i>Suporte</a>
       </li>
     </ul>
     <div class="sidebar-version">Versão 1.0.0</div>
@@ -79,14 +85,13 @@
             </div>
             <div class="area-body">
               <div class="prod-collum">
-                <label>Nome do Produto</label>
+                <label class="title-item">Nome do Produto</label>
                 <input type="text" class="input-text">
     
-                <label>Descrição do Produto (Opcional)</label>
+                <label class="title-item">Descrição do Produto (Opcional)</label>
                 <textarea class="input-textarea"></textarea>
                 
-                <!-- Again -->
-                <label>Categoria do produto</label>
+                <label class="title-item">Categoria do produto</label>
                 <div class="input-select-area">
                   <select class="input-select">
                     <option>Selecione a Categoria</option>
@@ -97,20 +102,38 @@
                     <option>Categoria 5</option>
                   </select>
                 </div>
-                <!-- Again -->
 
                 <div class="prod-row">
                   <div class="prod-collum">
-                    <label>Preço</label>
+                    <label class="title-item">Preço</label>
                     <input type="text" class="input-number">
                   </div>
       
                   <div class="prod-collum">
-                    <label>Unidades</label>
+                    <label class="title-item">Quantidade</label>
                     <input type="text" class="input-number">
                   </div>
                 </div>
-    
+                
+                <div class="prod-row">
+                  <div class="prod-collum">
+                    <label class="title-item">Unidade</label>
+                    <input type="text" class="input-number">
+                  </div>
+      
+                  <div class="prod-collum">
+                    <label class="title-item">Medida</label>
+                    <div class="input-select-area">
+                      <select class="input-select">
+                        <option>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                      </select>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
               <div class="prod-collum">
                 <div class="prod-img" style="background-image: url(./img/pizza.jpg);">

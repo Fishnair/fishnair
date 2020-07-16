@@ -148,7 +148,9 @@ html, body{
   width: 100%;
   margin:0 auto;
 }
+
 .row{
+  width:100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -170,9 +172,7 @@ html, body{
 .prod-collum{
   font-size: 20px;
   align-items: center;
-
-
-
+  
   position: relative;
   width: 100%;
 }
@@ -238,18 +238,19 @@ html, body{
 
   flex-wrap: wrap;
 }
-.area-body label{
+.title-item{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
 }
 .input-text, .input-textarea, .input-number{
+  margin-bottom: 20px;
   max-width: 90%;
   min-width: 90%;
   width: 90%;
   font-size: 22px;
-  padding: 8px 8px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding: 8px;
   border: 2px solid #192056;
   border-radius: 10px;
   color: #000;
@@ -257,7 +258,11 @@ html, body{
   font-weight: 500;
 }
 .input-textarea{
-  max-height: 200px;
+  max-height: 120px;
+  min-height: 50px;
+}
+.input-textarea-large{
+  max-height: 240px !important;
 }
 .input-number{
   text-align: right;
@@ -279,6 +284,7 @@ html, body{
 }
 .input-img-area{
   margin-top: 10px;
+  margin-bottom: 20px;
   height: 50px;
   position: relative;
   cursor: pointer;
@@ -324,13 +330,14 @@ html, body{
 }
 .input-select{
   font-size: 22px;
-  padding: 10px 5px;
+  padding: 8px;
   color: #000;
   border: none;
   background: transparent;
   height: 100%;
   width: 100%;
   z-index: 5;
+  padding-right: 40px;
   cursor: pointer;
   position: relative;
   -webkit-appearance: none;
@@ -1240,7 +1247,6 @@ html, body{
 .header-nav-dropdown-itens{
   max-height: 0px;
   overflow-y: hidden;
-  transition: max-height .3s ease-in-out;
   background: #fff;
   position: absolute;
   right: 0;
@@ -1252,4 +1258,113 @@ html, body{
 .header-nav-dropdown-itens .header-nav-link{
   padding-left: 10px; 
   width: 150px;
+}
+
+.page-color-area{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.page-color-container{
+  position: relative;
+  height: auto;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+.page-color-input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.page-color{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  transition: all ease-in-out .1s;
+}
+.page-color-blue:after,.page-color-green:after,.page-color-yellow:after,.page-color-red:after,.page-color-pink:after,.page-color-purple:after,.page-color-orange:after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 21px;
+  height: 30px;
+  border: solid;
+  border-width: 0 10px 10px 0;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.page-color-blue{
+  background-color: #2375FF;
+}
+.page-color-blue:hover{
+  background-color:#044D8C;
+}
+.page-color-input:checked ~ .page-color-blue:after{
+  border-color:#000;
+  opacity: 1;
+}
+.page-color-green{
+  background-color: #009921;
+}
+.page-color-green:hover{
+  background-color:#006616;
+}
+.page-color-input:checked ~ .page-color-green:after{
+  border-color:#000;
+  opacity: 1;
+}
+.page-color-red{
+  background-color: #E50011;
+}
+.page-color-red:hover{
+  background-color:#C4000F;
+}
+.page-color-input:checked ~ .page-color-red:after{
+  border-color:#fff;
+  opacity: 1;
+}
+.page-color-pink{
+  background-color: #FE0E4C;
+}
+.page-color-pink:hover{
+  background-color:#B20A35;
+}
+.page-color-input:checked ~ .page-color-pink:after{
+  border-color:#fff;
+  opacity: 1;
+}
+.page-color-yellow{
+  background-color: #FFCB05;
+}
+.page-color-yellow:hover{
+  background-color:#FAB400;
+}
+.page-color-input:checked ~ .page-color-yellow:after{
+  border-color:#000;
+  opacity: 1;
+}
+.page-color-purple{
+  background-color: #6E0080;
+}
+.page-color-purple:hover{
+  background-color:#4C0059;
+}
+.page-color-input:checked ~ .page-color-purple:after{
+  border-color:#fff;
+  opacity: 1;
+}
+.page-color-orange{
+  background-color: #FF7900;
+}
+.page-color-orange:hover{
+  background-color:#FF5600;
+}
+.page-color-input:checked ~ .page-color-orange:after{
+  border-color:#000;
+  opacity: 1;
 }
