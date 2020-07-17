@@ -292,7 +292,6 @@ html, body{
 }
 .input-img-area{
   margin-top: 10px;
-  margin-bottom: 20px;
   height: 50px;
   position: relative;
   cursor: pointer;
@@ -1426,4 +1425,8 @@ html, body{
 .page-color-input:checked ~ .page-color-orange:after{
   border-color:#000;
   opacity: 1;
+}
+
+.mb-10{
+  margin-bottom: 20px;
 }
