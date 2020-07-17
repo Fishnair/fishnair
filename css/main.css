@@ -245,6 +245,7 @@ html, body{
   flex-wrap: wrap;
 }
 .title-item{
+  font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   display: block;
@@ -252,9 +253,9 @@ html, body{
 }
 .input-text, .input-textarea, .input-number{
   margin-bottom: 20px;
-  max-width: 90%;
-  min-width: 90%;
-  width: 90%;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
   font-size: 22px;
   padding: 8px;
   border: 2px solid #192056;
@@ -268,6 +269,7 @@ html, body{
   min-height: 50px;
 }
 .input-textarea-large{
+  min-height: 120px !important;
   max-height: 240px !important;
 }
 .input-number{
@@ -317,7 +319,7 @@ html, body{
   border-radius: 10px;
   display: block;
   border: 2px #192056 solid;
-  width: 90%;
+  width: 100%;
   margin: 10px auto 20px auto;
   position: relative;
 }
