@@ -226,13 +226,8 @@ html, body{
 }
 .area-footer-text{
   padding: 22px 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   display: block;
   text-align: center;
-  right: 0;
-  left: 0;
   user-select: none;
 }
 .area-body{
@@ -945,10 +940,21 @@ html, body{
 }
 
 /*Table Properties*/
+.table-area{
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+}
+.table-footer{
+  background:#192056;
+  padding: 22px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .table-header{
-  position: sticky;
-  top: 0;
-  z-index: 20;
   font-size: 22px;
   text-transform: uppercase;
   border-top-left-radius: 20px;
@@ -977,15 +983,11 @@ html, body{
   flex-direction: row;
 }
 .table-body{
-  min-height: calc(100% - 100px);
-  max-height: calc(100% - 100px);
-  height: 100%;
   display: flex;
+  height: 100%;
   overflow: scroll;
   flex-direction: column;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 .table-body .table-row:not(.table-header) .table-item{
   border-right: 1px #041134 solid;
@@ -1102,8 +1104,6 @@ html, body{
   margin: auto;
   text-align: center;
   border-radius: 8px;
-  height: 80vh;
-  max-height: 80vh;
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
