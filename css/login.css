@@ -67,7 +67,7 @@ body{
 }
 .login-body{
   width: 100%;
-  padding: 30px 15px;
+  padding:30px 15px 15px 15px;
   background-color:#fff;
 }
 
@@ -112,6 +112,8 @@ body{
 }
 .login-link{
   font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
   color: #000;
   cursor: pointer;
 }
@@ -156,4 +158,10 @@ body{
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.g-recaptcha{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
