@@ -35,6 +35,27 @@ $(document).ready(function () {
 		$('#add-categ').addClass('hidden');
   });
 
+
+  $('.edit-prod-title').click(function(){
+		$('#edit-categ').removeClass('hidden');
+  });
+  $('#edit-categ-close').click(function(){
+		$('#edit-categ').addClass('hidden');
+  });
+  $('.edit-prod-option').click(function(){
+		$('#edit-item').removeClass('hidden');
+  });
+  $('#edit-item-close').click(function(){
+		$('#edit-item').addClass('hidden');
+  });
+
+  $('.delete-button').click(function(){
+		$('#delete-alert').removeClass('hidden');
+  });
+  $('#alert-close').click(function(){
+		$('#delete-alert').addClass('hidden');
+  });
+
   $('.addition-add-item').click(function(){
 		$('#add-item').removeClass('hidden');
   });

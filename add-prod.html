@@ -242,7 +242,7 @@
               </div>
             </label>
           </div>
-          <div class="edit-prod-option addition-add-item">
+          <div class="addition-add-item">
             <i class="fas fa-plus-circle"></i>Adicionar Item
           </div>
         </div>
@@ -313,7 +313,7 @@
               </div>
             </label>
           </div>
-          <div class="edit-prod-option addition-add-item">
+          <div class="addition-add-item">
             <i class="fas fa-plus-circle"></i>Adicionar Item
           </div>
         </div>
@@ -410,6 +410,105 @@
     </div>
   </div>
 
+  <div id="edit-categ" class="addition-bg hidden">
+    <div class="addition-area">
+      <div class="addition-header">
+        <span class="addition-header-title">Editar Categoria</span>
+        <div id="edit-categ-close" class="addition-close"></div>
+      </div>
+      <div class="addition-body">
+        <label class="addition-title">Nome da Categoria</label>
+        <input type="text" class="addition-input-text">
+        
+        <div class="addition-options">
+          <div class="addition-option">
+            <div class="toggle-button-text-area">
+              <div class="toggle-button-text">
+                Obrigatorio
+              </div>
+            </div>
+            <div class="toggle-button">
+              <input type="checkbox" class="checkbox">
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+
+          <div class="addition-option">
+            <div class="toggle-button-text-area">
+              <div class="toggle-button-text">
+                Apenas Um
+              </div>
+            </div>
+            <div class="toggle-button">
+              <input type="checkbox" class="checkbox">
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="edit-prod-footer">
+        <button class="main-button delete-button">Remover</button>
+        <button class="main-button">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="edit-item" class="addition-bg hidden">
+    <div class="addition-area">
+      <div class="addition-header">
+        <span class="addition-header-title">Editar Item</span>
+        <div id="edit-item-close" class="addition-close"></div>
+      </div>
+      <div class="addition-body">
+        <label class="addition-title">Nome do Item</label>
+        <input type="text" class="addition-input-text">
+
+        <div class="addition-options">
+          <div class="addition-option addition-price">
+            <label class="addition-title-price">Preço
+              <input type="text" class="addition-input-price">
+            </label>
+          </div>
+
+          <div class="addition-option">
+            <div class="toggle-button-text-area">
+              <div class="toggle-button-text">
+                Quantidade
+              </div>
+            </div>
+            <div class="toggle-button">
+              <input type="checkbox" class="checkbox">
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="edit-prod-footer">
+        <button class="main-button delete-button">Deletar</button>
+        <button class="main-button">Salvar</button> 
+      </div>
+    </div>
+  </div>
+
+  <div id="delete-alert" class="addition-bg hidden">
+    <div class="addition-area">
+      <div class="addition-header">
+        <span class="addition-header-title">Editar Item</span>
+        <div id="alert-close" class="addition-close"></div>
+      </div>
+      <div class="addition-body">
+        <span class="alert-message">Essa ação não poderá ser defeita</span>
+      </div>
+      
+      <div class="edit-prod-footer">
+        <button class="main-button">Continuar</button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="./js/script.js"></script>

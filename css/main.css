@@ -377,13 +377,10 @@ html, body{
 
 .main-button{
   background-color:#4b82c3;
-
   width: auto;
   padding: 16px 20px;
   text-decoration: none;
   color: #fff;
-  
-  
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
@@ -393,13 +390,18 @@ html, body{
   font-size: 16px;
   user-select: none;
   border-radius: 4px;
-  
   transition: all ease-in .3s;
 }
 .main-button:hover{
   background-color: #396dac;
 }
 
+.delete-button{
+  background-color:#E61B1C !important;
+}
+.delete-button:hover{
+  background-color: #C21718 !important;
+}
 /*
 |-----------------|
 |>>> EDIT PROD <<<|
@@ -501,6 +503,7 @@ html, body{
   font-size: 16px;
   cursor: pointer; 
   font-weight: 700;
+  user-select: none;
 }
 .edit-prod-title:hover{
   background-color: rgba(0, 0, 0, 0.1);
@@ -510,13 +513,14 @@ html, body{
   overflow: hidden;
   flex-wrap: wrap;
 }
-.edit-prod-option{
+.edit-prod-option, .addition-add-item{
   width: 50%;
   position: relative;
   font-size: 14px;
   display: flex;
   cursor: pointer;
   padding-right: 20px;
+  user-select: none;
 }
 @media (max-width:576px){
   .edit-prod-option{
@@ -628,6 +632,7 @@ html, body{
 
 /*Edit Prod Add Categ*/
 .edit-prod-add-categ{
+  user-select: none;
   text-align: center;
   font-size: 22px;
   font-weight: 700;
@@ -731,6 +736,15 @@ html, body{
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #fff;
+}
+.alert-message{
+  color: #192056;
+  margin: 20px 0 8px 0;
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 .addition-title{
   color: #192056;
