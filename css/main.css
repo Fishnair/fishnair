@@ -955,6 +955,9 @@ html, body{
   border-bottom-right-radius: 20px;
 }
 .table-header{
+  position: sticky;
+  top: 0;
+  z-index: 5;
   font-size: 22px;
   text-transform: uppercase;
   border-top-left-radius: 20px;
@@ -966,12 +969,6 @@ html, body{
   font-size: 22px;
   text-transform: uppercase;
 }
-.table-header .table-item:first-child{
-  border-top-left-radius: 16px;
-}
-.table-header .table-item:last-child{
-  border-top-right-radius: 16px;
-}
 .table-header .table-item{
   background:#192056;
   color: #fff;
@@ -982,14 +979,22 @@ html, body{
   display: flex;
   flex-direction: row;
 }
-.table-body{
+.table-content{
   display: flex;
   height: 100%;
-  overflow: scroll;
   flex-direction: column;
+}
+.table-body{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  position: relative;
+  height: 100%;
   background-color: #fff;
 }
-.table-body .table-row:not(.table-header) .table-item{
+.table-content .table-row .table-item{
   border-right: 1px #041134 solid;
   border-bottom: 1px #041134 solid;
   background-color: #fff;
@@ -1004,7 +1009,7 @@ html, body{
 }
 
 .table-item{
-  padding: 15px 0;
+  padding: 15px 10px;
   min-width: 150px;
 }
 .table-body .table-row:not(.table-header) .table-item:last-child{
@@ -1022,7 +1027,6 @@ html, body{
   max-width: 100%;
 }
 .table-item-content{
-  margin: 0 10px;
   width: 100%;
   text-align: center;
   word-wrap: break-word;
