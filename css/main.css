@@ -304,6 +304,8 @@ html, body{
   width: 100%;
   text-align: center;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
   transform: translateY(-50%);
   color: #fff;
   position: absolute;
