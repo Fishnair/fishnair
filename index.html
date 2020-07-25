@@ -114,11 +114,8 @@
           </div>
           <div class="row">
             <div class="flex-table">
-              <div class="table-search-area">
-                <div class="table-search">
-                  <input class="table-input" type="text" placeholder="Buscar...">
-                  <button class="search-button"><i class="fas fa-search"></i></button>
-                </div>
+              <div class="table-title-area">
+                <div class="table-title">Aguardando Aprovação</div>
               </div>
               <div class="table-area">
                 <div class="table-body">
@@ -142,7 +139,60 @@
                     </div>
                   </div>
                   <div class="table-content order-table">
+                    <div class="table-row accept-row">
+                      <div class="table-item">
+                        <div class="table-item-content">Moteus o Brabo</div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          <div class="table-item-list">Batata Frita</div>
+                          <div class="table-item-list">Peixe</div>
+                          <div class="table-item-list">Coquinha gelada</div>
+                          <div class="table-item-list">Brigadeiro de Morango</div>
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">20:00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="table-footer">
+                  <span class="area-footer-text">
+                    Clique no Produto para visualizar os Detalhes
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-table">
+              <div class="table-title-area">
+                <div class="table-title">Aguardando Envio</div>
+              </div>
+              <div class="table-area">
+                <div class="table-body">
+                  <div class="table-header">
                     <div class="table-row">
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Nome do Cliente
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Produtos
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Hora
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-content order-table">
+                    <div class="table-row order-row">
                       <div class="table-item">
                         <div class="table-item-content">Moteus o Brabo</div>
                       </div>
@@ -171,6 +221,59 @@
           </div>
         </div>
       </main>
+    </div>
+  </div>
+
+  <div id="accept-prod" class="info-prod-bg hidden">
+    <div class="info-prod-area">
+      <div class="edit-prod-header">
+        <span class="edit-prod-header-title">Informações Pedido</span>
+        <div id="accept-prod-close" class="edit-prod-close"></div>
+      </div>
+      <div class="edit-prod-body">
+        <span class="info-prod-title">Nome do Cliente</span>
+        <span class="info-prod-text">Moteus o Brabo</span>
+
+        <span class="info-prod-title">Telefone do Cliente</span>
+        <span class="info-prod-text">(25) 4002-8922</span>
+
+        <span class="info-prod-title">Endereço</span>
+        <span class="info-prod-text">
+          <ul>
+            <li>Rua dos Bobos N°0 </li>
+            <li>Bairro Maluco</li>
+            <li>Belo Horizonte - MG</li>
+          </ul>
+        </span>
+        <span class="info-prod-title">Produtos</span>
+        <span class="info-prod-text">
+          <ul>
+            <li>Helicoptero de Ataque</li>
+            <li>Oléo de Motor</li>
+            <li>Peixe</li>
+            <li>Vegano (x2)</li>
+          </ul>
+        </span>
+
+        <div class="row">
+          <div class="col-md-6">
+            <span class="info-prod-title">Pagamento</span>
+            <span class="info-prod-text">
+              Dinheiro
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span class="info-prod-title">Valor</span>
+            <span class="info-prod-text">
+              R$&nbsp;58.60
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="edit-prod-footer">
+        <button id="enviar-pedido" class="main-button delete-button">Cancelar</button>
+        <button id="enviar-pedido" class="main-button accept-button">Aceitar</button>
+      </div>
     </div>
   </div>
 

@@ -404,6 +404,13 @@ html, body{
 .delete-button:hover{
   background-color: #C21718 !important;
 }
+
+.accept-button{
+  background-color:#2CBF04 !important;
+}
+.accept-button:hover{
+  background-color: #2E8C03 !important;
+}
 /*
 |-----------------|
 |>>> EDIT PROD <<<|
@@ -1449,4 +1456,14 @@ html, body{
 
 .mb-10{
   margin-bottom: 20px;
+}
+.table-title-area{
+  margin-bottom: 10px;
+}
+.table-title{
+  color: #041134;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  user-select: none;
 }

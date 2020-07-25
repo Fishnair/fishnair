@@ -2,29 +2,22 @@ $(document).ready(function () {
 	$('.sidebar-nav-dropdown-toggle').click(function(){
     $(this).toggleClass('open');
 	});
-
   $('.header-nav-dropdown-toggle').click(function(){
     $(this).toggleClass('open');
 	});
 	$('#sidebar-toggle').click(function(){
     $('#sidebar').toggleClass('sidebar-active');
   });	
-  
   $('.sidebar-fade').click(function(){
     $('#sidebar').toggleClass('sidebar-active');
   });	
 
-
-
-
   $('.edit-prod-close').click(function(){
 		$('#edit-prod').addClass('hidden');
 	});
-
 	$('#edit-prod-button').click(function(){
 		$('#edit-prod').removeClass('hidden');
   });    
-
   $('.edit-prod-add-categ').click(function(){
 		$('#add-categ').removeClass('hidden');
   });
@@ -34,8 +27,6 @@ $(document).ready(function () {
   $('#add-categ-close').click(function(){
 		$('#add-categ').addClass('hidden');
   });
-
-
   $('.edit-prod-title').click(function(){
 		$('#edit-categ').removeClass('hidden');
   });
@@ -67,7 +58,17 @@ $(document).ready(function () {
   $('#info-prod-close').click(function(){
 		$('#info-prod').addClass('hidden');
   });
-  $('.table-row').click(function(){
+  $('.accept-row').click(function(){
+		$('#accept-prod').removeClass('hidden');
+  });
+  $('#accept-prod-close').click(function(){
+		$('#accept-prod').addClass('hidden');
+  });
+
+  $('#info-prod-close').click(function(){
+		$('#info-prod').addClass('hidden');
+  });
+  $('.order-row').click(function(){
 		$('#info-prod').removeClass('hidden');
   });
 
