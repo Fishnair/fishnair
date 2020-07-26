@@ -101,5 +101,12 @@ $(document).ready(function () {
     $('#change-password').addClass('hidden');
   });
 
+
+  $('#highlights').click(function(){
+    $('#highlights-area').removeClass('hidden');
+  });	
+  $('#highlights-close').click(function(){
+    $('#highlights-area').addClass('hidden');
+  });
 });
 

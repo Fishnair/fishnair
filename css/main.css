@@ -1467,3 +1467,66 @@ html, body{
   text-transform: uppercase;
   user-select: none;
 }
+.highlight-border{
+  display: flex;
+  flex-direction: row;
+  padding: 7px 0;
+  border-bottom: 2px solid #041134;
+}
+.highlight-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.highlight-desc{
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+}
+.highlight-button-area{
+  display: flex;
+  flex-direction: row;
+}
+.higlight-button{
+  margin-left: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #222;
+
+  transition: all ease-in-out .1s;
+}
+
+.highlight-accept{
+  color: #fff;
+  background-color:#1abd1a;
+}
+.highlight-accept:hover{
+  background-color:#2E8C03;
+}
+.highlight-delete{
+  color: #fff;
+  background-color:#E50011;
+}
+.highlight-delete:hover{
+  background-color:#C21718;
+}
+.highlight-star{
+  color: #fff;
+  background-color:#FAB400;
+}
+.highlight-star:hover{
+  background-color:#F7971E;
+}
+.highlight-star.marked{
+  color:#FAB400;
+  background-color: #fff;
+}
+.highlight-star.marked:hover{
+  color:#F7971E;
+}
