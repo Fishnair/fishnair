@@ -94,6 +94,12 @@ $(document).ready(function () {
     $('#add-giftcard').addClass('hidden');
   });	
   
+  $('#forgot-password').click(function(){
+    $('#change-password').removeClass('hidden');
+  });
+  $('#change-password-close').click(function(){
+    $('#change-password').addClass('hidden');
+  });
 
 });
 

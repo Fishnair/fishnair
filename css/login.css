@@ -52,7 +52,9 @@ body{
 .login-header, .login-footer{
   background:#192056;
   padding: 22px;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 700;
+  user-select: none;
   text-transform: uppercase;
   color: #fff !important;
   width: 100%;

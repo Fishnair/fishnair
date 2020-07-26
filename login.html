@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/rules.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/login.css">
+
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -22,16 +25,33 @@
 
         <div class="g-recaptcha" data-sitekey="your_site_key"></div>
 
-
-        <a href="index.html" class="login-link">Esqueci Minha Senha</a>
+        <a id="forgot-password" class="login-link">Esqueci Minha Senha</a>
         <a href="cadastro.html" class="login-link">Criar nova Conta</a>
       </div>
       <div class="login-footer">
-        <button class="main-button">Entrar</button>
+        <a href="index.html" class="main-button">Entrar</a>
       </div>
     </div>
   </div>
 
+  <div id="change-password" class="addition-bg hidden">
+    <div class="addition-area">
+      <div class="addition-header">
+        <span class="addition-header-title">Esqueci minha Senha</span>
+        <div id="change-password-close" class="addition-close"></div>
+      </div>
+      <div class="addition-body">
+        <label class="addition-title">Digite seu E-mail</label>
+        <input type="email" class="addition-input-text">
+      </div>
+      
+      <div class="edit-prod-footer">
+        <a href="forgot-passoword.html" class="main-button">Recuperar a Senha</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
