@@ -64,6 +64,9 @@ body, html, h1, h2, h3, h4, h5, h6, span, a, div, aside, footer, section, header
   font-style: inherit;
   vertical-align: baseline;
 }
+*:focus{
+  outline: none;
+}
 ol, ul{
   list-style: none;
 }
@@ -331,7 +334,7 @@ body {
   border: 1px solid;
   padding: 22px;
   border-radius: 60px;
-  transition:  all ease-in .3s;
+  transition:  all ease-in .2s;
 }
 .button-1:hover{
   color: #fff;
@@ -443,7 +446,7 @@ body {
 .header-nav{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .header-nav-link,
 .header-nav-dropdown-toggle{
