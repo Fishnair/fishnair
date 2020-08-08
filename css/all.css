@@ -964,7 +964,6 @@ body {
   font-size: 20px;
   color:#000;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   display: inline-block;
 }
 .cart-item{
@@ -978,14 +977,13 @@ body {
   text-align: justify;
   display: block;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 .cart-edit, .cart-remove{
   background-color: transparent;
   border: none;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   color: #000;
+  font-size: 16px;
   margin: 10px 0;
   display: block;
   cursor: pointer;
