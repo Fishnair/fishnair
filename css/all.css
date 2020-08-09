@@ -1736,3 +1736,8 @@ body {
   font-size: 22px;
   color: #555;
 }
+.g-recaptcha{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
