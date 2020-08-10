@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="@Descricao do Business">
+  <title>@NomeDoCliente</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/colors.css">
+</head>
+<body>
+
+  <div class="pag-area">
+    <header class="header">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md-3 col-logo">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="header-logo" src="img/logo.webp" alt="">
+            </picture>
+          </div>
+          <div class="col-9">
+            <nav class="nav-desk">
+              <ul class="header-nav">
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                </li>
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="menu.html"><i class="fas fa-utensils mr-2"></i>Cardapio</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="cart.html" class="header-nav-link"><i class="fas fa-shopping-bag mr-2"></i>Sacola</a>
+                </li>
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="login.html">
+                    <i class="fas fa-user mr-2"></i>Entrar</a>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="pag-content">
+      <!--
+      <div class="no-delivery">
+        Você ainda não realizou nenhum pedido :(
+      </div>
+      -->
+      <div class="delivery-itens container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="delivery-item">
+              <div class="delivery-date">DD/MM as HH:MM</div>
+              <div class="delivery-status-area">
+                Status: <span class="delivery-status">Concluido</span>
+              </div>
+              <div class="delivery-item-messsage">Clique para Exibir Detalhes</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="delivery-item">
+              <div class="delivery-date">DD/MM as HH:MM</div>
+              <div class="delivery-status-area">
+                Status: <span class="delivery-status">Concluido</span>
+              </div>
+              <div class="delivery-item-messsage">Clique para Exibir Detalhes</div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="delivery-item">
+              <div class="delivery-date">DD/MM as HH:MM</div>
+              <div class="delivery-status-area">
+                Status: <span class="delivery-status">Concluido</span>
+              </div>
+              <div class="delivery-item-messsage">Clique para Exibir Detalhes</div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <nav class="nav-mobile">
+      <a 
+      href="index.html"><i class="fas fa-home mr-2"></i></a>
+      <a href="menu.html"><i class="fas fa-utensils mr-2"></i></a>
+      <a id="openCartMob"><i class="fas fa-shopping-bag mr-2"></i></a>
+      <a href="login.html" class="selected"><i class="fas fa-user mr-2"></i></a>
+    </nav>
+  </div>
+
+  <div id="delivery-details" class="on-bg alert-bg hidden">
+    <div class="alert-area">
+      <div class="alert-header">
+        <span class="alert-header-title">Detalhes do Pedido</span>
+        <div id="delivery-close" class="close-button delivery-close"></div>
+      </div>
+      <div class="delivery-body">
+        <span class="alert-title">Endereço</span>
+        <span class="delivery-text">
+          <ul>
+            <li>Rua dos Bobos N°0 </li>
+            <li>Bairro Maluco</li>
+            <li>Belo Horizonte - MG</li>
+          </ul>
+        </span>
+        <span class="alert-title">Produtos</span>
+        <span class="delivery-text">
+          <ul>
+            <li>Helicoptero de Ataque</li>
+            <li>Oléo de Motor</li>
+            <li>Peixe</li>
+            <li>Vegano (x2)</li>
+          </ul>
+        </span>
+        <span class="alert-title">Horario</span>
+        <span class="delivery-text">dd/mm/yyyy - hh:mm</span>
+        <div class="row">
+          <div class="col-md-6">
+            <span class="alert-title">Pagamento</span>
+            <span class="delivery-text">
+              Dinheiro
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span class="alert-title">Valor</span>
+            <span class="delivery-text">
+              R$&nbsp;58.60
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-footer"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

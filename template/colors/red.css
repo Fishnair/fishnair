@@ -1,0 +1,35 @@
+/*Border-Color*/
+.cart-header, .cart-select-area, .cart-select-area:before, .cart-footer, .cart-input, .cart-prod, .login-input, .menu-options, .menu-categ-area:before, .menu-container, .header, .nav-mobile, .button-1, .login-button, .login-button-2, .login-select-area, .login-select-area:before, .delivery-text, .alert-input-text, .user-mob-item, .user-mob-area, .menu-categ-area, .password-body{
+    border-color:#E50011;
+  }
+  /*Background-Color*/
+  .alert-header, .login-button:hover, .alert-footer, .delivery-footer, .edit-prod-button ,.edit-prod-close:before, .edit-prod-close:after, .cart-close:before, .cart-close:after, .search-button, .button-giftcard, .button-giftcard:hover, .payment-button, .login-icon, .login-button, .button-1:hover,.check-item .checkmark:after, .check-item .checkmark:after, .radio-container input:checked ~ .checkmark-radio, .checkbox-container input:checked ~ .checkmark-checkbox, .login-button-2:hover{
+    background-color:#E50011;
+  }
+  .edit-prod-button:disabled{
+    background-color:#E50011 !important;
+  }
+  /*Background-Hover*/
+  .edit-prod-button:hover, .search-button:hover, .payment-button:hover, .login-button:hover, .button-giftcard:hover, .cart-close:hover:before, .cart-close:hover:after{
+    background-color:#C4000F;
+  }
+  /*Color*/
+  .nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .title-menu h1, .feature-price, .paralax-text h2, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item{
+    color: #E50011;
+  }
+  .checkmark-checkbox:after{
+    border-color:#fff;
+  }
+  .checkmark-radio:after{
+    background-color: #fff;
+  }
+  .edit-prod-button{
+    color: #000;
+  }
+  /*Outros*/
+  .paralax:before, .paralax-50:before{
+    background-color: #999;
+  }
+  .alert-close:before, .alert-close:after{
+    background-color: #fff;
+  }
