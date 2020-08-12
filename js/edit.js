@@ -12,8 +12,8 @@ function changeViewport(type){
     $('#screen').height(650);
     $('#tablet-button').addClass('selected');
   } else if(type == 2){
-    $('#screen').width(300);
-    $('#screen').height(507);
+    $('#screen').width(375);
+    $('#screen').height(667);
     $('#mobile-button').addClass('selected');
   }
 }
