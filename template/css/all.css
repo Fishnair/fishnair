@@ -1521,6 +1521,7 @@ body {
 
 .fishnair-link {
   color: #007bff;
+  cursor: pointer;
   text-decoration: none;
   background-color: transparent;
 }
