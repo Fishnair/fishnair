@@ -1,0 +1,4 @@
+.header-logo:hover, .footer-logo:hover, .about-desc:hover, .about-thumb:hover, .footer-desc:hover, .menu-item-content:hover{
+  outline: yellow dashed 5px;
+  cursor: pointer;
+}
