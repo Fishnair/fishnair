@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name=”viewport” content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="@Descricao do Business">
   <title>@NomeDoCliente</title>
   <link rel="stylesheet" href="css/all.css">
@@ -166,15 +166,13 @@
       </section>
     
       <section class="features-area">
-        <div class="feature">
-          <picture>
-            <source type="image/webp" srcset="img/features-1.webp">
-              <img src="img/features-1.jpg" alt="">
-          </picture>
+        <div class="feature" style="background-image: url('img/features-1.webp');">
           <div class="feature-text-area">
-            <span class="feature-price">R$ 99</span>
-            <span class="feature-title">Titulo da Feature</span>
-            <p class="feature-description">Aquela descrição foda que o cliente escreve <br> sobre o produto TOP dele</p>
+            <div class="feature-text">
+              <span class="feature-price">R$ 99</span>
+              <span class="feature-title">Titulo da Feature</span>
+              <p class="feature-description">Testando outra descrição braba, pizza com molho e aquela calabresa linda muito gostosinha pra te deixar com agua na boca</p>
+            </div>  
           </div>
         </div>
           
@@ -183,11 +181,12 @@
             <source type="image/webp" srcset="img/features-2.webp">
             <img src="img/features-2.jpg" alt="">
           </picture>
-          
           <div class="feature-text-area">
-            <span class="feature-price">R$ 99</span>
-            <span class="feature-title">Titulo da Feature</span>
-            <p class="feature-description">Aquela descrição foda que o cliente escreve <br> sobre o produto TOP dele</p>
+            <div class="feature-text">
+              <span class="feature-price">R$ 99</span>
+              <span class="feature-title">Titulo da Feature</span>
+              <p class="feature-description">Aquela descrição foda que o cliente escreve sobre o produto TOP dele</p>
+            </div>  
           </div>
         </div>
       </section>
@@ -227,21 +226,34 @@
                   <source type="image/webp" srcset="img/logo.webp">
                   <img class="footer-logo" src="img/logo.webp" alt="">
                 </picture>
-                <p class="footer-desc">
+                <span class="footer-desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                </span>
               </div>
               <div class="col-md-4">
                 <span class="footer-title">Contato</span>
-                <p>R. Nome da Rua, Bairro, Cidade MG</p>
-                <p>(XX) 9 4002-8922</p>
-                <p>contato@mail.com</p>
+                <ul>
+                  <li class="footer-row-contact">R. Nome da Rua, Bairro, Cidade MG</li>
+                  <li class="footer-row-contact">(XX) 9 4002-8922</li>
+                  <li class="footer-row-contact">contato@mail.com</li>
+                </ul>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 px-4">
                 <span class="footer-title">Horários</span>
-                <p>Segunda.......................Fechado</p>
-                <p>Ter - Sex...............10:00 - 22:00</p>
-                <p>Sab - Dom...............12:00 - 23:00</p>
+                <ul>
+                  <li class="footer-row">
+                    <div class="footer-collum">Segunda</div>
+                    <div class="footer-collum">Fechado</div>
+                  </li>
+                  <li class="footer-row">
+                    <div class="footer-collum">Ter - Sex</div>
+                    <div class="footer-collum">10:00 - 22:00</div>
+                  </li>
+                  <li class="footer-row">
+                    <div class="footer-collum">Sab - Dom</div>
+                    <div class="footer-collum">12:00 - 23:00</div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -258,108 +270,6 @@
       <a aria-label="Carrinho"><i class="fas fa-shopping-bag mr-2"></i></a>
       <a aria-label="Usuario"><i class="fas fa-user mr-2"></i></a>
     </nav>
-  </div>
-  <div id="edit-prod" class="on-bg edit-prod-bg hidden">
-    <div class="edit-prod-area">
-      <div class="edit-prod-close-area">
-        <div class="close-button edit-prod-close">
-        </div>
-      </div>
-      <div class="edit-prod-content">
-        <div class="edit-prod-image">
-          <div class="menu-img" style="background-image: url('./img/food2.webp');"></div>
-        </div>
-        <div class="edit-prod-body">
-          <div class="edit-prod-title">Tipo Radio Simples</div>
-          <div class="edit-prod-options">
-            <div class="edit-prod-option">
-              <label class="radio-container">
-                <div class="edit-prod-input">
-                  <input type="radio" name="radio">
-                  <span class="checkmark-radio"></span>
-                </div>
-  
-                <div class="edit-prod-texts">
-                  <span class="edit-prod-option-text">
-                    Tipo Radio 1
-                  </span>
-                  <span class="edit-prod-price-item">
-                    + R$ 0
-                  </span>
-                </div>
-              </label>
-            </div>
-            <div class="edit-prod-option">
-              <label class="radio-container">
-                <div class="edit-prod-input">
-                  <input type="radio" name="radio">
-                  <span class="checkmark-radio"></span>
-                </div>
-  
-                <div class="edit-prod-texts">
-                  <span class="edit-prod-option-text">
-                    Tipo Radio 2
-                  </span>
-                  <span class="edit-prod-price-item">
-                    + R$ 0
-                  </span>
-                </div>
-              </label>
-            </div>
-            <div class="edit-prod-option">
-              <label class="radio-container">
-                <div class="edit-prod-input">
-                  <input type="radio" name="radio">
-                  <span class="checkmark-radio"></span>
-                </div>
-  
-                <div class="edit-prod-texts">
-                  <span class="edit-prod-option-text">
-                    Tipo Radio 3
-                  </span>
-                  <span class="edit-prod-price-item">
-                    + R$ 0
-                  </span>
-                </div>
-              </label>
-            </div>
-            <div class="edit-prod-option">
-              <label class="radio-container">
-                <div class="edit-prod-input">
-                  <input type="radio" name="radio">
-                  <span class="checkmark-radio"></span>
-                </div>
-  
-                <div class="edit-prod-texts">
-                  <span class="edit-prod-option-text">
-                    Tipo Radio 4
-                  </span>
-                  <span class="edit-prod-price-item">
-                    + R$ 0
-                  </span>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="edit-prod-footer">
-        <div class="edit-prod-footer-top">
-          <div class="edit-prod-name">Nome do Produto</div>
-          <div class="edit-prod-price-value">R$ 99</div>
-        </div>
-        <div class="edit-prod-footer-bottom">
-          <button class="edit-prod-button">Adicionar</button>
-
-          <div class="edit-prod-qnt">
-            <div class="edit-prod-remove counter-disable">–</div>
-            <div class="edit-prod-value">1</div>
-            <div class="edit-prod-add">+</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
