@@ -98,6 +98,7 @@ body {
   color: #000;
   text-align: left;
   background-color: #fff;
+  cursor: default;
 }
 
 .menu-container{
@@ -794,6 +795,7 @@ body {
   height: 100%;
   position: absolute;
   opacity:.65;
+  z-index: 0;
   background-color:#000;
 }
 .feature img{
@@ -802,10 +804,14 @@ body {
   object-fit: cover;
 }
 .feature-text-area{
-  bottom: 50px;
-  left: 70px;
   position: absolute;
+  bottom: 35px;
+  width: 100%;
   z-index: 3;
+}
+.feature-text{
+  margin: 0 35px;
+  position: relative;
 }
 .feature-title{
   font-size: 34px;
@@ -820,6 +826,7 @@ body {
 .feature-description{
   font-size: 16px;
   color: #fff;
+  text-align: justify;
   font-weight: 700;
   margin-top: 8px;
   margin-bottom: 22px;
@@ -844,8 +851,7 @@ body {
     bottom: 0;
   }
   .feature-text-area{
-    left: 0;
-    margin: 0 35px;
+    bottom: 10px;
   }
   .feature-text-area p{
     font-size: 16px;
@@ -876,6 +882,7 @@ body {
 
 .footer-row{
   display: flex;
+  margin-bottom: 10px;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
@@ -888,9 +895,21 @@ body {
   bottom:0;
   z-index: 0;
 }
+.footer-row-contact{
+  text-align: center;
+  margin-bottom: 10px;
+}
 .footer-collum{
   background-color: #000;
+  padding: 0 5px;
   z-index: 1;
+}
+.footer-collum:first-child{
+  padding-right:5px;
+}
+.footer-collum:last-child{
+  padding-left:5px;
+
 }
 .footer-area p{
   font-size: 16px;
@@ -1554,8 +1573,14 @@ body {
 .footer-desc, .about-desc{
   text-align: justify;
 }
+.footer-desc{
+  text-align: justify;
+  display: inline-block;
+  width: 100%;
+}
 .footer{
   text-align: center;
+  cursor: default;
 }
 
 .cart-body .row:not(.giftcard-area){
