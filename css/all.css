@@ -293,30 +293,32 @@ body {
   transform: translateY(-50%);
   user-select: none;
 }
-.paralax-text h1{
+.paralax-title{
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
+  display: block;
   font-size: 100px;
   line-height: 100px;
   font-family: "Paytone One", sans-serif;
 }
-.paralax-text h2{
+.paralax-subtitle{
   text-transform: capitalize;
   position: relative;
+  display: block;
   margin-top: -80px;
   font-size: 140px;
   font-family: "Pacifico", cursive;
 }
-.paralax-50 .paralax-text h2{
+.paralax-50 .paralax-subtitle{
   margin-top: 0 !important;
 }
 @media (max-width: 768px){
-  .paralax-text h1{
+  .paralax-title{
     font-size: 50px;
     line-height: 50px;
   }
-  .paralax-text h2{
+  .paralax-subtitle{
     font-size: 70px;
     margin-top: -40px;
   }
@@ -749,7 +751,7 @@ body {
   justify-content: flex-start;
 }
 
-.title-menu h1{
+.page-subtitle{
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 18px;
@@ -757,9 +759,10 @@ body {
   text-align: center;
   font-family: "Pacifico", cursive;
 }
-.title-menu h2{
+.page-title{
   font-size: 50px;
   font-weight: 700;
+  display: block;
   color: #1A0D01;
   text-align: center;
   font-family: "Montserrat", sans-serif;
