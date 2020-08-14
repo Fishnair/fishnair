@@ -14,7 +14,7 @@
   background-color:#044D8C;
 }
 /*Color*/
-.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .title-menu h1, .feature-price, .paralax-text h2, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item{
+.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item{
   color: #2375FF;
 }
 .checkmark-checkbox:after{
