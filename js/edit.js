@@ -30,6 +30,10 @@ function changeViewport(type){
 }
 
 $(document).ready(function () {
+  $('.sidebar-toggle-title').click(function(){
+    $(this).toggleClass('open');
+	});
+
   $('#laptop-button').click(function(){
     changeViewport(0)
   });
