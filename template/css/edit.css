@@ -2,3 +2,8 @@
   outline: yellow dashed 5px;
   cursor: pointer;
 }
+
+.paralax.hover{
+  border: yellow dashed 5px;
+  cursor: pointer;
+}
