@@ -98,5 +98,12 @@ $(document).ready(function () {
     $('#logo-input').focus();
     $('#logo-input').trigger('click');
   });
- 
+  
+
+  $('#highlights').click(function(){
+    $('#highlights-area').removeClass('hidden');
+  });	
+  $('#highlights-close').click(function(){
+    $('#highlights-area').addClass('hidden');
+  });
 });
