@@ -20,7 +20,7 @@
       <div class="sidebar-toggle">
         <div class="sidebar-toggle-title">Configuração Inicial</div>
         <div class="sidebar-toggle-content">
-          <div class="sidebar-title">Titulo do Cabeçalho</div>
+          <div class="sidebar-title">Titulo da Página</div>
           <input type="text" class="sidebar-input">
           <div class="sidebar-title">Descrição no Buscador</div>
           <textarea class="sidebar-textarea"></textarea>
@@ -77,9 +77,21 @@
         <div class="sidebar-toggle-title">Banner</div>
         <div class="sidebar-toggle-content">
           <div class="sidebar-title">Titulo</div>
-          <textarea id="title-banner-input" class="sidebar-banner-title" rows="3">Tubarão
-Assassino
-          </textarea>
+          <div class="title-banner-input">
+            <div class="title-input-area">
+              <input type="text" class="title-input" value="Tubarão">
+              <button class="button-delete-row">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="title-input-area">
+              <input type="text" class="title-input" value="Assassino">
+              <button class="button-delete-row">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+            <button id="highlights" class="sidebar-button">Adicionar Linha</button>
+          </div>
     
           <div class="sidebar-title">Sub-titulo</div>
           <input id="subtitle-banner-input" type="text" class="sidebar-input" value="Cardapio">
@@ -129,6 +141,86 @@ Assassino
         <div class="sidebar-toggle-content">        
           <div class="sidebar-title">Descrição</div>
           <textarea id="desc-footer-input" class="sidebar-textarea"></textarea>
+        
+          <div class="sidebar-title">Contato</div>
+          <div class="contact-area-input">
+            <div class="contact-input-area">
+              <div class="contact-input-title">1° Coluna</div>
+              <div class="contact-input-row">
+                <input type="text" class="contact-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+              <div class="contact-input-row">
+                <input type="text" class="link-input" placeholder="Link" value="">
+              </div>
+            </div>
+
+            <div class="contact-input-area">
+              <div class="contact-input-title">2° Coluna</div>
+              <div class="contact-input-row">
+                <input type="text" class="contact-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+              <div class="contact-input-row">
+                <input type="text" class="link-input" placeholder="Link" value="">
+              </div>
+            </div>
+
+            <div class="contact-input-area">
+              <div class="contact-input-title">3° Coluna</div>
+              <div class="contact-input-row">
+                <input type="text" class="contact-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+              <div class="contact-input-row">
+                <input type="text" class="link-input" placeholder="Link" value="">
+              </div>
+            </div>
+            
+            <button id="highlights" class="sidebar-button">Adicionar Linha</button>
+          </div>
+
+          <div class="sidebar-title">Horarios</div>
+          <div class="horario-area-input">
+            <div class="horario-input-area">
+              <div class="contact-input-title">1° Coluna</div>
+              <div class="horario-input-row">
+                <input type="text" class="horario-input" value="">
+
+                <input type="text" class="horario-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+
+              <div class="contact-input-title">2° Coluna</div>
+              <div class="horario-input-row">
+                <input type="text" class="horario-input" value="">
+
+                <input type="text" class="horario-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+
+              <div class="contact-input-title">3° Coluna</div>
+              <div class="horario-input-row">
+                <input type="text" class="horario-input" value="">
+
+                <input type="text" class="horario-input" value="">
+                <button class="button-delete-row">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>            
+            <button id="highlights" class="sidebar-button">Adicionar Linha</button>
+          </div>
         </div>
       </div>
     </div>

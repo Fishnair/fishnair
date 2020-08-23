@@ -145,6 +145,109 @@ html, body{
 .sidebar-button:hover{
   background: #034C8C;
 }
+.title-input-area{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.title-input{
+  background-color: #0F1333;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: calc(100% - 44px);
+}
+
+.contact-input-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.contact-input{
+  background-color: #0F1333;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: calc(100% - 44px);
+}
+
+.link-input{
+  background-color: #0F1333;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.horario-input-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.horario-input{
+  background-color: #0F1333;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  width: calc(50% - 25.5px);
+}
+.horario-input:nth-child(2){
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-delete-row{
+  background: #0468BF;
+  color: #fff;
+  font-size: 18px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 14px;
+  transition: ease-in-out all .2s;
+}
+.button-delete-row:hover{
+  background: #034C8C;
+}
+.contact-input-title{
+  color:#fff;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 .input-logo-area{
   background-size: contain !important;
 }
