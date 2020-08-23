@@ -13,17 +13,14 @@ function changeViewport(type){
 
   if(type == 0){
     $('#screen').width(900);
-    $('#screen').height(667);
     $('#laptop-button').addClass('selected');
     screen = 0;
   } else if(type == 1){
     $('#screen').width(578);
-    $('#screen').height(667);
     $('#tablet-button').addClass('selected');
     screen = 1;
   } else if(type == 2){
     $('#screen').width(375);
-    $('#screen').height(667);
     $('#mobile-button').addClass('selected');
     screen = 2;
   }
