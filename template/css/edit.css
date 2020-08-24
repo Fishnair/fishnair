@@ -1,9 +1,30 @@
-.header-logo:hover, .footer-logo:hover, .about-desc:hover, .about-thumb:hover, .footer-desc:hover, .menu-item-content:hover, .paralax-title:hover, .paralax-subtitle:hover, .page-title:hover, .page-subtitle:hover{
+.header-logo:hover, .footer-logo:hover, .about-desc:hover, .about-thumb:hover, .footer-desc:hover, .menu-item-content:hover, .paralax-title:hover, .paralax-subtitle:hover, .page-title:hover, .page-subtitle:hover, .footer-row-contact:hover, .footer-row:hover{
   outline: yellow dashed 5px;
   cursor: pointer;
 }
 
 .paralax.hover{
   border: yellow dashed 5px;
+  cursor: pointer;
+}
+
+.footer-add-row{
+  width: 80%;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.footer-add-row:hover{
+  width: 80%;
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 10px 0;
   cursor: pointer;
 }
