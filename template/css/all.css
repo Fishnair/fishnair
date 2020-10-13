@@ -277,6 +277,7 @@ body {
 }
 .paralax:before, .paralax-50:before{
   content: '';
+  background-color: #999;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1790,4 +1791,37 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+/*Border-Color*/
+.cart-header, .cart-select-area, .cart-select-area:before, .cart-footer, .cart-input, .cart-prod, .login-input, .menu-options, .menu-categ-area:before, .menu-container, .header, .nav-mobile, .button-1, .login-button, .login-button-2, .login-select-area, .login-select-area:before, .delivery-text, .alert-input-text, .user-mob-item, .user-mob-area, .menu-categ-area, .password-body{
+  border-color:var(--MainColor);
+}
+/*Background-Color*/
+.alert-header, .login-button:hover, .alert-footer, .delivery-footer, .edit-prod-button ,.edit-prod-close:before, .edit-prod-close:after, .cart-close:before, .cart-close:after, .search-button, .button-giftcard, .button-giftcard:hover, .payment-button, .login-icon, .login-button, .button-1:hover,.check-item .checkmark:after, .check-item .checkmark:after, .radio-container input:checked ~ .checkmark-radio, .checkbox-container input:checked ~ .checkmark-checkbox, .login-button-2:hover{
+  background-color:var(--MainColor);
+}
+.edit-prod-button:disabled{
+  background-color:var(--MainColor) !important;
+}
+/*Background-Hover*/
+.edit-prod-button:hover, .search-button:hover, .payment-button:hover, .login-button:hover, .button-giftcard:hover, .cart-close:hover:before, .cart-close:hover:after{
+  background-color:var(--MainColorDark);
+}
+/*Color*/
+.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item{
+  color: var(--MainColor);
+}
+.checkmark-checkbox:after{
+  border-color:var(--Checkmark);
+}
+.checkmark-radio:after{
+  background-color: var(--Checkmark);
+}
+.edit-prod-button{
+  color: var(--ButtonColor);;
+}
+/*Outros*/
+.alert-close:before, .alert-close:after{
+  background-color: var(--AlertClose);
 }
