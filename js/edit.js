@@ -12,27 +12,36 @@ function changeViewport(type){
   }
 
   if(type == 0){
-    $('#screen').width(900);
-    $('#laptop-button').addClass('selected');
+    $('#screen').removeClass('mobile');
+    $('#screen').removeClass('tablet');
+    $('#screen').addClass('desktop');
     screen = 0;
   } else if(type == 1){
-    $('#screen').width(578);
-    $('#tablet-button').addClass('selected');
+    $('#screen').removeClass('mobile');
+    $('#screen').removeClass('desktop');
+    $('#screen').addClass('tablet');
     screen = 1;
   } else if(type == 2){
-    $('#screen').width(375);
-    $('#mobile-button').addClass('selected');
+    $('#screen').removeClass('tablet');
+    $('#screen').removeClass('desktop');
+    $('#screen').addClass('mobile');
     screen = 2;
   }
 }
-
-var teste = document.getElementById('screen').contentWindow.document.getElementById('subtitle-destaques');
 
 $(document).ready(function () {
   $('.sidebar-toggle-title').click(function(){
     $(this).toggleClass('open');
 	});
 
+  $('#refresh').click(function(){
+    $('.mobile-template-header').addClass('active');
+    $('#screen').addClass('active');
+  });
+  $('#screen-close').click(function(){
+    $('.mobile-template-header').removeClass('active');
+    $('#screen').removeClass('active');
+  });
   $('#laptop-button').click(function(){
     changeViewport(0)
   });

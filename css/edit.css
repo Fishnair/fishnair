@@ -123,7 +123,78 @@ html, body{
   height: 100%;
 }
 .screen{
+  height: 100%;
   transition: width ease-in-out .2s;
+}
+.screen.desktop{
+  width:900px;
+}
+.screen.tablet{
+  width:578px;
+}
+.screen.mobile{
+  width:375px;
+}
+
+@media (max-width: 576px) {
+  .mobile-template-header{
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    height:60px;
+    z-index:2000;
+    position:fixed;
+    background-color: #192056;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-template-header.active{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  .mobile-header-close{
+    background-color: transparent;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: auto;
+    position: absolute;
+    right: 0px;
+    display:inline-block;
+    cursor: pointer;
+  }
+  .mobile-header-close:before, .mobile-header-close:after{
+    content: '';
+    height: 8px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transition: all ease-in-out .2s;
+  }
+  .mobile-header-close:hover:before,
+  .mobile-header-close:hover:after{
+    background-color: #4b82c3;
+  }
+  .mobile-header-close:before{
+    transform: rotateZ(45deg);
+  }
+  .mobile-header-close:after{
+    transform: rotateZ(-45deg);
+  }
+  .screen.active{
+    width:100%;
+    top:60px;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2000;
+    position:fixed;
+  }
 }
 .content{
   width: 100%;
@@ -144,10 +215,18 @@ html, body{
   
   min-width: 350px;
   max-width: 350px;
+  max-height: 100%;
   background-color:#192056;
   box-shadow: 0 0 10px #000;
   z-index: 1031;
   transition: left ease-in-out .3s;
+}
+@media (max-width: 576px) {
+  .sidebar{
+    width: 100%;
+    max-width:100%;
+    min-width: 100%;
+  }
 }
 .sidebar-option{
   height: 100%;
@@ -188,6 +267,7 @@ html, body{
   cursor: pointer;
   position: relative;
   transition: all ease-in-out .2s;
+  user-select: none;
 }
 .sidebar-toggle-title:hover{
   background-color:#2375FF;
@@ -218,7 +298,7 @@ html, body{
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px;
-
+  margin-top:10px;
   transition: ease-in-out all .2s;
 }
 .sidebar-button:hover{
@@ -228,7 +308,6 @@ html, body{
 .sidebar-button.red{
   background: #e40d0d;
   color: #fff;
-  margin-top:10px
 }
 .sidebar-button.red:hover{
   background: #8c0303;
