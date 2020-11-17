@@ -165,5 +165,11 @@ body{
 .g-recaptcha{
   display: flex;
   justify-content: center;
+
+}
+.m1-top{
+  margin-top: 1rem;
+}
+.m1-bottom{
   margin-bottom: 1rem;
 }

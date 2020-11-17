@@ -7,17 +7,25 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/login.css">
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="login-container">
     <div class="login-area">
       <div class="login-header">Recuperar Senha</div>
       <div class="login-body">
+        <label class="login-text">Código</label>
+        <input class="login-input" type="text">
+
         <label class="login-text">Senha</label>
         <input class="login-input" type="password">
 
         <label class="login-text">Confirme sua senha</label>
         <input class="login-input" type="password">
+      
+        <div class="g-recaptcha m1-bottom" data-sitekey="your_site_key"></div>
+
+        <a id="forgot-password" class="login-link">Reenviar e-mail</a>
       </div>
       <div class="login-footer">
         <a href="login.html" class="main-button">Salvar</a>
