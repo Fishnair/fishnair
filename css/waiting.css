@@ -1,0 +1,108 @@
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#0468BF;
+  flex-direction: column;
+}
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+svg path,
+svg rect{
+  fill: #fff;
+}
+.loading-text{
+  font-family: 'Open Sans', sans-serif;
+  user-select: none;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.loading-button{
+  color: #fff;
+  border: 4px solid #fff;
+  background-color: transparent;
+  padding: 15px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+  transition: all ease-in-out .2s;
+}
+.loading-button:hover{
+  color: #0468BF;
+  background-color: #fff;
+}
+
+.hourglass {
+  display: block;
+  background: #0468BF;
+  margin: 3em auto;
+  width: 2em;
+  height: 4em;
+  -webkit-animation: hourglass 1s linear infinite;
+          animation: hourglass 1s linear infinite;
+}
+
+.outer {
+  fill: #fff;
+}
+
+.middle {
+  fill: #0468BF;
+}
+
+@-webkit-keyframes hourglass {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #fff 0 0em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -4em 0 0;
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #fff 0 -2em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -2em 0 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    box-shadow: inset #fff 0 -2em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -2em 0 0;
+  }
+}
+
+@keyframes hourglass {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #fff 0 0em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -4em 0 0;
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #fff 0 -2em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -2em 0 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    box-shadow: inset #fff 0 -2em 0 0, inset #0468BF 0 -2em 0 0, inset #fff 0 -2em 0 0;
+  }
+}
