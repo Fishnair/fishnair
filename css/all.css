@@ -792,6 +792,9 @@ body {
   height: 450px;
   position: relative;
   cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .feature:before{
   content: '';
