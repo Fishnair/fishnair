@@ -1256,8 +1256,14 @@ html, body{
   border: 2px #192056 solid;
   width: 100%;
   margin-bottom: 20px;
+  min-height: 45px;
 }
-
+.obs li:not(:last-child){
+  margin-bottom: 10px;
+}
+.obs-prod{
+  font-weight: 700;
+}
 
 
 
