@@ -369,15 +369,10 @@ body {
 }
 .alert-close{
   margin-left: auto;
-  position: absolute;
-  right: 10px;
-}
-.delivery-close{
-  margin-left: auto;
   right: 10px;
   display:inline-block;
 }
-.delivery-close:before, .delivery-close:after{
+.alert-close:before, .alert-close:after{
   background-color: #fff;
 }
 .close-button:before, .close-button:after{
@@ -416,10 +411,6 @@ body {
 }
 .alert-close:hover:before,
 .alert-close:hover:after{
-  background-color: #eee;
-}
-.delivery-close:hover:before,
-.delivery-close:hover:after{
   background-color: #eee;
 }
 .col-logo{
