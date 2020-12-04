@@ -478,6 +478,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 5;
+  background-color: #fff;
 }
 .header-dropdown-item:hover{
   background-color: #eee !important;
