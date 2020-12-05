@@ -12,6 +12,13 @@ $(document).ready(function () {
     $('#sidebar').toggleClass('sidebar-active');
   });	
 
+  $('#config-entrega-close').click(function(){
+		$('#config-entrega').addClass('hidden');
+	});
+	$('#config-entrega-open').click(function(){
+		$('#config-entrega').removeClass('hidden');
+  }); 
+
   $('.edit-prod-close').click(function(){
 		$('#edit-prod').addClass('hidden');
 	});

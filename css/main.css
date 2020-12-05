@@ -691,12 +691,14 @@ html, body{
   padding: 10px;
   background-color:#192056;
   height: 65px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 .addition-header-title{
   font-size: 24px;
   line-height: 45px;
   color: #fff;
-  position: absolute;
   left: 20px;
 }
 /*Addition Close*/
@@ -707,7 +709,7 @@ html, body{
   width: 45px;
   margin-left: auto;
   position: absolute;
-  right: 10px;
+  right: 0px;
   cursor: pointer;
 }
 .addition-close:before, .addition-close:after{
@@ -849,6 +851,7 @@ html, body{
   margin-top: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 @media(max-width: 576px){
   .addition-options{
@@ -857,14 +860,19 @@ html, body{
 }
 .addition-option{
   width: 50%;
+  max-width: 50%;
   padding-right: 20px;
   display: flex;
   min-height: 50px;
+  flex: 0 0 50%;
 }
 @media(max-width: 576px){
   .addition-option{
+    flex: 0 0 100%;
     width: 100%;
+    max-width: 100%;
     margin-top: 10px;
+    padding-right: 0px;
   }
 }
 .addition-price{
@@ -915,16 +923,17 @@ html, body{
   position: relative;
   top: 50%;
   width: 74px;
+  min-width: 74px;
   height: 36px;
   margin-top: -20px;
   margin-left: 15px;
   overflow: hidden;
   border-radius: 100px;
+  margin-left: auto;
 }
 @media(max-width: 576px){
   .toggle-button{
     margin-top: 7px;
-    margin-left: auto;
   }
 }
 .toggle-button .layer{
