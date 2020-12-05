@@ -153,11 +153,18 @@ body {
   margin-right: -15px;
   margin-left: -15px;
 }
+.row-cart{
+  margin-right: -7px !important;
+  margin-left: -7px !important;
+}
+.row-cart > [class*="col-"] {
+  padding-right: 7px !important;
+  padding-left: 7px !important;
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-.no-gutters > .col,
 .no-gutters > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
