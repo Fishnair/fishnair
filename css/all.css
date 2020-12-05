@@ -162,7 +162,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-.col-4, .col-5, .col-7, .col-8, .col-9, .col-12, .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-lg-5, .col-lg-6{
+.col-4, .col-5,.col-6, .col-7, .col-8, .col-9, .col-12, .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-lg-5, .col-lg-6{
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -177,6 +177,11 @@ body {
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
+}
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 .col-7 {
   -ms-flex: 0 0 58.333333%;
@@ -1546,10 +1551,10 @@ body {
   width: 100%;
   border: 2px solid;
   border-radius:10px;
+  padding: 8px 10px;
 }
 .cart-select{
   font-size: 18px;
-  padding: 5px 10px;
   width: 100%;
   z-index: 3;
   border: none;
