@@ -115,5 +115,18 @@ $(document).ready(function () {
   $('#highlights-close').click(function(){
     $('#highlights-area').addClass('hidden');
   });
+
+
+  $('.password-see').click(function(){
+    if($(this).children('i').hasClass('fa-eye') == true){
+      $(this).parent('.password-input-area').children('.password-input').attr('type', 'text');
+      $(this).children('i').removeClass('fa-eye');
+      $(this).children('i').addClass('fa-eye-slash')
+    }else{
+      $(this).parent('.password-input-area').children('.password-input').attr('type', 'password');
+      $(this).children('i').removeClass('fa-eye-slash');
+      $(this).children('i').addClass('fa-eye');
+    }
+  });
 });
 

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/rules.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -21,9 +22,12 @@
         <input class="login-input" type="email">
 
         <label class="login-text">Senha</label>
-        <input class="login-input" type="password">
-
-        <div class="g-recaptcha m1-bottom" data-sitekey="your_site_key"></div>
+        <div class="password-input-area">
+          <input class="password-input" type="password" placeholder="Senha">
+          <button class="password-see">
+            <i class="fas fa-eye"></i>
+          </button>
+        </div>
 
         <a id="forgot-password" class="login-link">Esqueci Minha Senha</a>
         <a href="cadastro.html" class="login-link">Criar nova Conta</a>
@@ -43,7 +47,6 @@
       <div class="addition-body">
         <label class="addition-title">Digite seu E-mail</label>
         <input type="email" class="addition-input-text">
-        <div class="g-recaptcha m1-top" data-sitekey="your_site_key"></div>
       </div>
       
       <div class="edit-prod-footer">
@@ -52,7 +55,6 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="login-container">
@@ -24,10 +24,20 @@
             <input class="login-input" type="tel">
 
             <label class="login-text">Senha</label>
-            <input class="login-input" type="password">
+            <div class="password-input-area">
+              <input class="password-input" type="password" placeholder="Senha">
+              <button class="password-see">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
 
             <label class="login-text">Repita sua Senha</label>
-            <input class="login-input" type="password">
+            <div class="password-input-area">
+              <input class="password-input" type="password" placeholder="Senha">
+              <button class="password-see">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
 
           <div class="col-md-6">
@@ -48,7 +58,6 @@
             </div>
           </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
         <a href="login.html" class="login-link">Já tenho conta</a>
       </div>
       <div class="login-footer">
@@ -56,5 +65,8 @@
       </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
