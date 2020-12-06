@@ -20,7 +20,6 @@ $(document).ready(function () {
 	$('.menu-item').click(function(){
 		$('#edit-prod').removeClass('hidden');
 	})
-	/*Nova Codigo */
 	$('#openEntrega').click(function () {
 		$('#entrega').removeClass('hidden');
 	});
@@ -44,4 +43,20 @@ $(document).ready(function () {
 		$('#delivery-details').addClass('hidden');
 	});
 
+  $('.password-see').click(function(){
+    if($(this).children('i').hasClass('fa-eye') == true){
+      $(this).parent('.password-input-area').children('.password-input').attr('type', 'text');
+      $(this).children('i').removeClass('fa-eye');
+      $(this).children('i').addClass('fa-eye-slash')
+    }else{
+      $(this).parent('.password-input-area').children('.password-input').attr('type', 'password');
+      $(this).children('i').removeClass('fa-eye-slash');
+      $(this).children('i').addClass('fa-eye')
+    }
+  })
 })
+
+function mostrarSenha(element){
+  console.log('Teste');
+  document.getElementById(element).className = "far fa-eye-slash";
+}

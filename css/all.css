@@ -25,7 +25,13 @@
 }
 .fa-envelope:before {
   content: "\f0e0";
-} 
+}
+.fa-eye:before {
+  content: "\f06e";
+}
+.fa-eye-slash:before{
+  content: "\f070";
+}
 .fa-home:before {
   content: "\f015";
 }
@@ -1412,7 +1418,7 @@ body {
   border-top-left-radius:15px;
   border-bottom-left-radius:15px;
 }
-.login-input{
+.login-input, .password-input-area{
   flex: 1;
   font-size: 22px;
   padding: 0 10px;
@@ -1420,6 +1426,27 @@ body {
   border-top-right-radius:15px;
   border-bottom-right-radius:15px;
   max-width: calc(100% - 60px);
+}
+.password-input-area{
+  display: flex;
+  padding-right: 0;
+}
+.password-input{
+  -webkit-text-security: none !important;
+  border: none;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  width: calc(100% - 60px);
+}
+.password-see{
+  font-size: 24px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
 }
 .login-select-area{
   position: relative;
@@ -1824,7 +1851,7 @@ body {
 }
 
 /*Border-Color*/
-.cart-header, .cart-select-area, .cart-select-area:before, .cart-footer, .cart-input, .cart-prod, .login-input, .menu-options, .menu-categ-area:before, .menu-container, .header, .nav-mobile, .button-1, .login-button, .login-button-2, .login-select-area, .login-select-area:before, .delivery-text, .alert-input-text, .user-mob-item, .user-mob-area, .menu-categ-area, .password-body, .edit-prod-obs{
+.cart-header, .cart-select-area, .cart-select-area:before, .cart-footer, .cart-input, .cart-prod,.password-input-area, .login-input, .menu-options, .menu-categ-area:before, .menu-container, .header, .nav-mobile, .button-1, .login-button, .login-button-2, .login-select-area, .login-select-area:before, .delivery-text, .alert-input-text, .user-mob-item, .user-mob-area, .menu-categ-area, .password-body, .edit-prod-obs{
   border-color:var(--MainColor);
 }
 /*Background-Color*/
@@ -1839,7 +1866,7 @@ body {
   background-color:var(--MainColorDark);
 }
 /*Color*/
-.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item{
+.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item, .password-see{
   color: var(--MainColor);
 }
 .checkmark-checkbox:after{
