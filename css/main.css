@@ -4,15 +4,30 @@ html, body{
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 .sidebar{
   position: fixed;
   top: 0;
   bottom: 0;
   left: -256px;
+  max-height: 100vh;
   width: 256px;
   background-color:#192056;
   z-index: 1031;
   transition: left ease-in-out .3s;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar.sidebar-active{
   left: 0;
@@ -29,13 +44,14 @@ html, body{
   font-size: 18px;
   text-transform: capitalize;
   user-select: none;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .sidebar-nav-link,
 .sidebar-nav-dropdown-toggle{
   padding: 10px;
   display: block;
-  height: 100%;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -81,16 +97,12 @@ html, body{
 .sidebar-version{
   color: #fff;
   font-size: 18px;
-  margin-top: auto;
-  margin-bottom: 10px;
   font-weight: 700;
   display: block;
   text-align: center;
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
   user-select: none;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .sidebar-nav i{
