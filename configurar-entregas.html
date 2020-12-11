@@ -89,148 +89,173 @@
     <div class="pag-body">
       <main class="pag-main">
         <div class="main-container">
-          
+          <div class="row justify-content-center">
+            <div class="delivery-col">
+              <div class="dashboard-col-area">
+                <span class="delivery-title">Taxa de Entrega</span>
+
+                <div id="delivery-tax-area" class="delivery-tax-area">
+                  <div class="delivery-tax-row">
+                    <div class="delivery-tax-text-area">
+                      <div class="delivery-tax-name-col">
+                        <label class="delivery-tax-title">Bairro</label>
+                        <input class="input-text">
+                      </div>
+                      <div class="delivery-tax-price-col">
+                        <label class="delivery-tax-title">Taxa</label>
+                        <input class="input-number">
+                      </div>
+                    </div>
+                    <div class="delivery-delete-area">
+                      <button class="delivery-delete-button"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                  </div>
+                </div>
+                
+                <button id="add-delivery-row" class="delivery-button">Adicionar Bairro</button>
+              </div>
+            </div>
+
+            <div class="delivery-col">
+              <div class="dashboard-col-area">
+                <span class="delivery-title">Formas de Pagamento</span>
+              <div class="delivery-options">
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Dinheiro
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Cartão de Credito
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Cartão de Debito
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+
+              <label class="addition-title">Bandeiras</label>
+              <div class="delivery-options">
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      MasterCard
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+      
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Visa
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+      
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Elo
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+      
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Hipecard
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+      
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Amex
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+      
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Alelo
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+
+                <div class="delivery-option">
+                  <div class="toggle-button-text-area">
+                    <div class="toggle-button-text">
+                      Diners Club
+                    </div>
+                  </div>
+                  <div class="toggle-button">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-    </div>
-  </div>
-
-  <div id="config-entrega" class="addition-bg">
-    <div class="addition-area">
-      <div class="addition-header">
-        <span class="addition-header-title">Editar Categoria</span>
-        <div id="config-entrega-close" class="addition-close"></div>
-      </div>
-      <div class="addition-body">
-        <label class="addition-title">Taxa de Entrega</label>
-        <input type="text" class="addition-input-text">
-        
-        <label class="addition-title">Formas de Pagamento</label>
-        <div class="addition-options">
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Dinheiro
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Cartão de Credito
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Cartão de Debito
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-        </div>
-
-        <label class="addition-title">Bandeiras</label>
-        <div class="addition-options">
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                MasterCard
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Visa
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Elo
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Hipecard
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Amex
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-
-          <div class="addition-option">
-            <div class="toggle-button-text-area">
-              <div class="toggle-button-text">
-                Alelo
-              </div>
-            </div>
-            <div class="toggle-button">
-              <input type="checkbox" class="checkbox">
-              <div class="knobs"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
-        </div>
-      </div>  
-      <div class="edit-prod-footer">
-        <button class="main-button">Salvar</button>
-      </div>
     </div>
   </div>
   <div class="sidebar-fade"></div>

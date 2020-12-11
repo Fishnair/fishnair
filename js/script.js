@@ -128,5 +128,29 @@ $(document).ready(function () {
       $(this).children('i').addClass('fa-eye');
     }
   });
-});
 
+  $('#add-delivery-row').click(function(){
+    var deliveryRow = `
+    <div class="delivery-tax-row">
+      <div class="delivery-tax-text-area">
+        <div class="delivery-tax-name-col">
+          <label class="delivery-tax-title">Bairro</label>
+          <input class="input-text">
+        </div>
+        <div class="delivery-tax-price-col">
+          <label class="delivery-tax-title">Taxa</label>
+          <input class="input-number">
+        </div>
+      </div>
+      <div class="delivery-delete-area">
+        <button class="delivery-delete-button"><i class="fas fa-trash-alt"></i></button>
+      </div>
+    </div>`;
+    $('#delivery-tax-area').append(deliveryRow);
+
+  });
+
+  $('.delivery-delete-button').click(function(){
+    
+  });
+});
