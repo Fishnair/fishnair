@@ -318,6 +318,7 @@ html, body{
   padding:12px 16px;
   border-radius: 8px;
   transition: .2s all ease-in-out;
+  margin-top: 15px;
 }
 .delivery-delete-button{
   width: 50px;
@@ -1677,4 +1678,41 @@ html, body{
 }
 .highlight-star.marked:hover{
   color:#F7971E;
+}
+.qrcode-area{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+.qrcode-img{
+  object-fit: contain;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 500px;
+  display: block;
+}
+.qr-code-btns{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.qr-code-download{
+  background-color: #192056;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 350px;
+  max-width: 90%;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all ease-in-out .2s;
+}
+.qr-code-download:hover{
+  background-color: #396dac;
 }
