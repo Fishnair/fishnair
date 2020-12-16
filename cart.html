@@ -43,7 +43,100 @@
       </div>
     </header>
 
-    <div class="pag-content"></div>
+    <div class="pag-content">
+
+      <div class="cart-area">  
+        <div class="cart-body">
+          <div class="cart-prod">
+            <div class="cart-prod-item">
+              <div class="cart-prod-row">
+                <div class="cart-prod-qnt">
+                  1x
+                </div>
+    
+                <div class="cart-prod-text">
+                  <div class="cart-prod-title">
+                    Nome do Produto
+                  </div>
+                </div>
+    
+                <div class="cart-prod-price">
+                  R$12.34
+                </div>
+    
+                <div class="cart-prod-remove">
+                </div>
+              </div>
+              <div class="cart-prod-row">
+                <div class="cart-prod-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-prod-item">
+              <div class="cart-prod-row">
+                <div class="cart-prod-qnt">
+                  1x
+                </div>
+    
+                <div class="cart-prod-text">
+                  <div class="cart-prod-title">
+                    Nome do Produto
+                  </div>
+                </div>
+    
+                <div class="cart-prod-price">
+                  R$12.34
+                </div>
+    
+                <div class="cart-prod-remove">
+                </div>
+              </div>
+              <div class="cart-prod-row">
+                <div class="cart-prod-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-prod-item">
+              <div class="cart-prod-row">
+                <div class="cart-prod-qnt">
+                  1x
+                </div>
+    
+                <div class="cart-prod-text">
+                  <div class="cart-prod-title">
+                    Nome do Produto
+                  </div>
+                </div>
+    
+                <div class="cart-prod-price">
+                  R$12.34
+                </div>
+    
+                <div class="cart-prod-remove">
+                </div>
+              </div>
+              <div class="cart-prod-row">
+                <div class="cart-prod-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-row">
+            <button id="openEntrega" class="payment-button">
+              <span>Finalizar</span>
+              <span class="cart-end-price">R$&nbsp;299,90</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <nav class="nav-mobile">
       <a 
@@ -53,86 +146,8 @@
       <a href="login.html"><i class="fas fa-user mr-2"></i></a>
     </nav>
   </div>
-  <div id="cart" class="on-bg cart-bg">
-    <div class="cart-area">
-      <div class="cart-header">
-        <span class="cart-header-title">Carrinho</span>
-        <div id="close-cart" class="close-button cart-close"></div>
-      </div>
 
-      <div class="cart-body">
-        <div class="cart-prod">
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-title">Nome do Produto</span>
-            </div>
-            <div class="cart-info cart-info-price">
-              <span class="cart-price">R$&nbsp;99,00</span>
-            </div>
-          </div>
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
-            </div>
-            
-          </div>
-          <div class="cart-row">
-            <button class="cart-edit">Editar</button>
-            <button class="cart-remove">Remover</button>
-          </div>
-        </div>
-        <div class="cart-prod">
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-title">Nome do Produto</span>
-            </div>
-            <div class="cart-info cart-info-price">
-              <span class="cart-price">R$&nbsp;99,00</span>
-            </div>
-          </div>
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
-            </div>
-            
-          </div>
-          <div class="cart-row">
-            <button class="cart-edit">Editar</button>
-            <button class="cart-remove">Remover</button>
-          </div>
-        </div>
-        <div class="cart-prod">
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-title">Nome do Produto</span>
-            </div>
-            <div class="cart-info cart-info-price">
-              <span class="cart-price">R$&nbsp;99,00</span>
-            </div>
-          </div>
-          <div class="cart-row">
-            <div class="cart-info">
-              <span class="cart-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
-            </div>
-          </div>
-          <div class="cart-row">
-            <button class="cart-edit">Editar</button>
-            <button class="cart-remove">Remover</button>
-          </div>
-        </div>
-      </div>
-      <div class="cart-footer">
-        <div class="cart-row">
-          <button id="openEntrega" class="payment-button">
-            <span>Finalizar</span>
-            <span class="cart-end-price">R$&nbsp;299,90</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="entrega" class="on-bg cart-bg">
+  <div id="entrega" class="on-bg cart-bg hidden">
     <div class="cart-area">
       <div class="cart-header">
         <span class="cart-header-title">Carrinho</span>
@@ -140,6 +155,19 @@
       </div>
 
       <div class="cart-body">
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Tipo de Pedido</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option>Delivery</option>
+                <option>Retirada no Local</option>
+                <option>Entrega na Mesa</option>
+              </select>
+
+            </div>
+          </div>
+        </div>
         <div class="row row-cart">
           <div class="col-8 col-md-9">
             <label class="cart-label">Rua</label>
@@ -154,50 +182,17 @@
         <div class="row row-cart">
           <div class="col-12">
             <label class="cart-label">Bairro</label>
-            <input class="cart-input">
-          </div>
-        </div>
-
-        <div class="row row-cart">
-          <div class="col-8">
-            <label class="cart-label">Cidade</label>
-            <input class="cart-input">
-          </div>
-
-          <div class="col-4">
-            <label class="cart-label">Estado</label>
             <div class="cart-select-area">
               <select class="cart-select">
-                <option value="">UF</option>
-                <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AP">AP</option>
-                <option value="AM">AM</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option>
-                <option value="DF">DF</option>
-                <option value="ES">ES</option>
-                <option value="GO">GO</option>
-                <option value="MA">MA</option>
-                <option value="MS">MS</option>
-                <option value="MT">MT</option>
-                <option value="MG">MG</option>
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PR">PR</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="RJ">RJ</option>
-                <option value="RN">RN</option>
-                <option value="RS">RS</option>
-                <option value="RO">RO</option>
-                <option value="RR">RR</option>
-                <option value="SC">SC</option>
-                <option value="SP">SP</option>
-                <option value="SE">SE</option>
-                <option value="TO">TO</option>
+                <option>Bairro 1</option>
+                <option>Bairro 2</option>
+                <option>Bairro 3</option>
+                <option>Bairro 4</option>
+                <option>Bairro 5</option>
+                <option>Bairro 6</option>
               </select>
             </div>
+           
           </div>
         </div>
 
@@ -266,6 +261,177 @@
       </div>
     </div>
   </div>
+<!-- Retirada no Local -->
+<!--
+  <div id="entrega" class="on-bg cart-bg">
+    <div class="cart-area">
+      <div class="cart-header">
+        <span class="cart-header-title">Carrinho</span>
+        <div id="close-entrega" class="close-button cart-close"></div>
+      </div>
+
+      <div class="cart-body">
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Tipo de Pedido</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option>Delivery</option>
+                <option>Retirada no Local</option>
+                <option>Entrega na Mesa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Nome</label>
+            <input class="cart-input">
+          </div>
+        </div>
+        <div class="row row-cart">
+          <div class="col-md-6 col-12">
+            <label class="cart-label">Forma de Pagamento</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option value="">Dinheiro</option>
+                <option value="">Cartão de Credito</option>
+                <option value="">Cartão de Debito</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <label class="cart-label">Troco</label>
+            <input class="cart-input">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label class="cart-label">Cupom</label>
+            <div class="row no-gutters giftcard-area">
+              <div class="col-7">
+                <input class="cart-input cart-giftcard">
+              </div>
+              <div class="col-5">
+                <button class="button-giftcard">Aplicar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-row">
+          <div class="cart-title-info">Valor Total</div>
+          <div class="cart-info">R$&nbsp;297,90</div>
+        </div>
+        <div class="cart-row">
+          <div class="cart-title-info">Cupom de Desconto</div>
+          <div class="cart-info">R$&nbsp;80,00</div>
+        </div>
+        <button id="openEntrega" class="payment-button">
+          <span>Confirmar</span>
+          <span class="cart-end-price">R$&nbsp;217,90</span>
+        </button>
+      </div>
+    </div>
+  </div>-->
+
+<!-- Entrega na Mesa -->
+<!--
+  <div id="entrega" class="on-bg cart-bg">
+    <div class="cart-area">
+      <div class="cart-header">
+        <span class="cart-header-title">Carrinho</span>
+        <div id="close-entrega" class="close-button cart-close"></div>
+      </div>
+
+      <div class="cart-body">
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Tipo de Pedido</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option>Delivery</option>
+                <option>Retirada no Local</option>
+                <option>Entrega na Mesa</option>
+              </select>
+
+            </div>
+          </div>
+        </div>
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Nome</label>
+            <input class="cart-input">
+          </div>
+        </div>
+
+        <div class="row row-cart">
+          <div class="col-12">
+            <label class="cart-label">Mesa</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option>Mesa 1</option>
+                <option>Mesa 2</option>
+                <option>Mesa 3</option>
+                <option>Mesa 4</option>
+                <option>Mesa 5</option>
+                <option>Mesa 6</option>
+              </select>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="row row-cart">
+          <div class="col-md-6 col-12">
+            <label class="cart-label">Forma de Pagamento</label>
+            <div class="cart-select-area">
+              <select class="cart-select">
+                <option value="">Dinheiro</option>
+                <option value="">Cartão de Credito</option>
+                <option value="">Cartão de Debito</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <label class="cart-label">Troco</label>
+            <input class="cart-input">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label class="cart-label">Cupom</label>
+            <div class="row no-gutters giftcard-area">
+              <div class="col-7">
+                <input class="cart-input cart-giftcard">
+              </div>
+              <div class="col-5">
+                <button class="button-giftcard">Aplicar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-row">
+          <div class="cart-title-info">Valor Total</div>
+          <div class="cart-info">R$&nbsp;297,90</div>
+        </div>
+        <div class="cart-row">
+          <div class="cart-title-info">Cupom de Desconto</div>
+          <div class="cart-info">R$&nbsp;00,00</div>
+        </div>
+        <button id="openEntrega" class="payment-button">
+          <span>Confirmar</span>
+          <span class="cart-end-price">R$&nbsp;217,90</span>
+        </button>
+      </div>
+    </div>
+  </div> -->
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="app.js"></script>
 </body>
