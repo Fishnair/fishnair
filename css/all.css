@@ -954,7 +954,6 @@ body {
 
 /*>>>> CARRINHO <<<<*/
 .cart-prod-item{
-  background-color:#AACEFF;
   padding: 20px 15px;
   border-radius: 8px;
   margin-bottom: 5px;
@@ -1947,4 +1946,7 @@ body {
 /*Outros*/
 .alert-close:before, .alert-close:after{
   background-color: var(--AlertClose);
+}
+.cart-prod-item{
+  background-color: var(--LightColor);
 }
