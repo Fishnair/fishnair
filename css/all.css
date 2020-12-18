@@ -1855,6 +1855,14 @@ body {
   overflow-y: auto;
   background-color: #fff;
 }
+.delivery-title{
+  display: block;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
 .delivery-text{
   font-size: 22px;
   margin-bottom:8px;
@@ -1931,7 +1939,7 @@ body {
   background-color:var(--MainColorDark);
 }
 /*Color*/
-.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item, .password-see{
+.nav-mobile .selected, .footer-title, .button-1, .delivery-item-messsage, .page-subtitle, .feature-price, .paralax-subtitle, .header-dropdown-item, .header-nav-link, .header-nav-dropdown-toggle, .cart-edit:hover, .cart-remove:hover, .login-button-2, .login-link:hover, .user-mob-item, .password-see, .delivery-title{
   color: var(--MainColor);
 }
 .checkmark-checkbox:after{
