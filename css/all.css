@@ -1017,7 +1017,7 @@ body {
 .cart-prod-remove:after{
   transform: rotateZ(-45deg);
 }
-.cart-bg{
+.padding-bg{
   padding: 10px;
 }
 .cart-area{
@@ -1035,7 +1035,6 @@ body {
 }
 
 .cart-header{
-  background-color:#fff;
   height: 65px;
   display: flex;
   align-items: center;
@@ -1065,6 +1064,28 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px){
+  .cart-bg{
+    top: 90px !important;
+    bottom: 90px !important;
+    padding:0px !important;
+    background-color: #fff;
+  }
+  .cart-bg .cart-area{
+    border-radius: 0px;
+    background-color: #fff;
+    height: 100%;
+  }
+  .cart-bg .cart-header{
+    opacity:0 !important;
+    position: hidden !important;
+    display: none !important;
+  }
+  .cart-bg .cart-body{
+    height: 100%;
+    max-height: 100%;
+  }
+}
 .cart-prod{
   padding-top: 16px;
   position: relative;
@@ -1928,14 +1949,14 @@ body {
   border-color:var(--MainColor);
 }
 /*Background-Color*/
-.alert-header, .login-button:hover, .alert-footer, .delivery-footer, .edit-prod-button ,.edit-prod-close:before, .edit-prod-close:after, .cart-close:before, .cart-close:after, .search-button, .button-giftcard, .button-giftcard:hover, .payment-button, .login-icon, .login-button, .button-1:hover,.check-item .checkmark:after, .check-item .checkmark:after, .radio-container input:checked ~ .checkmark-radio, .checkbox-container input:checked ~ .checkmark-checkbox, .login-button-2:hover{
+.alert-header, .cart-header, .login-button:hover, .alert-footer, .delivery-footer, .edit-prod-button ,.edit-prod-close:before, .edit-prod-close:after, .cart-close:before, .cart-close:after, .search-button, .button-giftcard, .button-giftcard:hover, .payment-button, .login-icon, .login-button, .button-1:hover,.check-item .checkmark:after, .check-item .checkmark:after, .radio-container input:checked ~ .checkmark-radio, .checkbox-container input:checked ~ .checkmark-checkbox, .login-button-2:hover{
   background-color:var(--MainColor);
 }
 .edit-prod-button:disabled{
   background-color:var(--MainColor) !important;
 }
 /*Background-Hover*/
-.edit-prod-button:hover, .search-button:hover, .payment-button:hover, .login-button:hover, .button-giftcard:hover, .cart-close:hover:before, .cart-close:hover:after{
+.edit-prod-button:hover, .search-button:hover, .payment-button:hover, .login-button:hover, .button-giftcard:hover{
   background-color:var(--MainColorDark);
 }
 /*Color*/
@@ -1948,13 +1969,16 @@ body {
 .checkmark-radio:after{
   background-color: var(--Checkmark);
 }
-.edit-prod-button{
-  color: var(--ButtonColor);;
+.edit-prod-button, .cart-header-title{
+  color: var(--ButtonColor);
+}
+.cart-close:before, .cart-close:after{
+  background-color: var(--ButtonColor);
 }
 /*Outros*/
 .alert-close:before, .alert-close:after{
   background-color: var(--AlertClose);
 }
-.cart-prod-item{
+.cart-prod-item, .cart-close:hover:before, .cart-close:hover:after{
   background-color: var(--LightColor);
 }
