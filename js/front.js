@@ -2,6 +2,10 @@ $(document).ready(function () {
 	$('.faq-block').click(function(){
     $(this).toggleClass('open');
   });
+  $('.hamburguer-header').click(function(){
+    $(this).toggleClass('active')
+    $('#menu-nav').toggleClass('hidden')
+  })
 });
 
 function scrollPlans(){
