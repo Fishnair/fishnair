@@ -86,6 +86,13 @@ $(document).ready(function () {
 		$('#confirmar-envio').removeClass('hidden');
   });
 
+  $('#delivery-close').click(function(){
+		$('#delivery-info').addClass('hidden');
+  });
+  $('.delivery-row').click(function(){
+		$('#delivery-info').removeClass('hidden');
+  });
+
   $('#entregador-envio').click(function(){
     $('#confirmar-envio').addClass('hidden');
     $('#info-prod').addClass('hidden');

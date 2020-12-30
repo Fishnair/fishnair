@@ -94,12 +94,12 @@
         <div class="main-container">
           <div class="row justify-content-center">
             <div class="cart-info-border col-sm-9 col-md-4 ">
-              <div class="cart-info gradient-blue">
+              <div class="cart-info gradient-red"> <!--Muda pro Verde qnd tiver Aberto-->
                 <div class="cart-info-top">
-                  <div class="info-text-content">Aberta</div>
-                  <div class="info-text-title">Status da Loja</div>
+                  <div class="info-text-content">Fechada</div>
+                  <div class="info-text-title">--:--</div>
                   <div class="cart-info-icon">
-                    <div class="toggle-button gray-blue">
+                    <div class="toggle-button clear">
                       <input type="checkbox" class="checkbox">
                       <div class="knobs"></div>
                       <div class="layer"></div>
@@ -108,19 +108,19 @@
                 </div>
               </div>
             </div>
-            <div class="cart-info-border col-sm-9 col-md-4 ">
+            <div class="cart-info-border col-sm-9 col-md-4">
               <div class="cart-info gradient-orange">
                 <div class="cart-info-top">
-                  <div class="info-text-content">--:--</div>
-                  <div class="info-text-title">Abertura da Loja</div>
+                  <div class="info-text-content">1</div>
+                  <div class="info-text-title">Preparando</div>
                 </div>
               </div>
             </div>
-            <div class="cart-info-border col-sm-9 col-md-4 ">
+            <div class="cart-info-border col-sm-9 col-md-4">
               <div class="cart-info gradient-purple">
                 <div class="cart-info-top">
                   <div class="info-text-content">1</div>
-                  <div class="info-text-title">Pedidos aguardando envio</div>
+                  <div class="info-text-title">Pedidos com o Entregador</div>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
           <div class="row">
             <div class="flex-table">
               <div class="table-title-area">
-                <div class="table-title">Aguardando Aprovação</div>
+                <div class="table-title">Preparando</div>
               </div>
               <div class="table-area">
                 <div class="table-body">
@@ -136,60 +136,7 @@
                     <div class="table-row">
                       <div class="table-item">
                         <div class="table-item-content">
-                          Nome do Cliente
-                        </div>
-                      </div>
-                      <div class="table-item">
-                        <div class="table-item-content">
-                          Produtos
-                        </div>
-                      </div>
-                      <div class="table-item">
-                        <div class="table-item-content">
-                          Hora
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-content order-table">
-                    <div class="table-row accept-row">
-                      <div class="table-item">
-                        <div class="table-item-content">Moteus o Brabo</div>
-                      </div>
-                      <div class="table-item">
-                        <div class="table-item-content">
-                          <div class="table-item-list">Batata Frita</div>
-                          <div class="table-item-list">Peixe</div>
-                          <div class="table-item-list">Coquinha gelada</div>
-                          <div class="table-item-list">Brigadeiro de Morango</div>
-                        </div>
-                      </div>
-                      <div class="table-item">
-                        <div class="table-item-content">20:00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="table-footer">
-                  <span class="area-footer-text">
-                    Clique no Produto para visualizar os Detalhes
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex-table">
-              <div class="table-title-area">
-                <div class="table-title">Aguardando Envio</div>
-              </div>
-              <div class="table-area">
-                <div class="table-body">
-                  <div class="table-header">
-                    <div class="table-row">
-                      <div class="table-item">
-                        <div class="table-item-content">
-                          Nome do Cliente
+                          Cliente
                         </div>
                       </div>
                       <div class="table-item">
@@ -223,6 +170,60 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="table-footer">
+                  <span class="area-footer-text">
+                    Clique no Produto para visualizar os Detalhes
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-table">
+              <div class="table-title-area">
+                <div class="table-title">Entregando</div>
+              </div>
+              <div class="table-area">
+                <div class="table-body">
+                  <div class="table-header">
+                    <div class="table-row">
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Entregador
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Endereço
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          Hora de Saida
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-content order-table">
+                    <div class="table-row delivery-row">
+                      <div class="table-item">
+                        <div class="table-item-content">Carlos, Careca</div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">
+                          <ul>
+                            <li class="table-item-list">Rua dos Bobos N°0 </li>
+                            <li class="table-item-list">Bairro Maluco</li>
+                            <li class="table-item-list">Belo Horizonte</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="table-item">
+                        <div class="table-item-content">20:00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
                 <div class="table-footer">
                   <span class="area-footer-text">
@@ -237,33 +238,49 @@
     </div>
   </div>
 
+  <!--Novo Pedido-->
   <div id="accept-prod" class="info-prod-bg hidden">
     <div class="info-prod-area">
       <div class="edit-prod-header">
-        <span class="edit-prod-header-title">Informações Pedido</span>
-        <div id="accept-prod-close" class="edit-prod-close"></div>
+        <span class="edit-prod-header-title">Novos Pedidos</span>
       </div>
-      <div class="edit-prod-body">
-        <span class="info-prod-title">Tipo de Pedido</span>
-        <span class="info-prod-text">Delivery</span>
+
+      <div class="accept-prod-body">
+        <div class="accept-prod-new">
+          <div class="accept-prod-new-item">
+            <div class="accept-prod-first-row">
+              <span class="accept-prod-name">Moteus o Brabo</span>
+              <span class="accept-prod-price">R$&nbsp;58.60</span>
+            </div>
+            <div class="second-row">
+              Rua dos Bobos N°0, Bairro Maluco
+            </div>
+          </div>
+
+          <div class="accept-prod-new-item">
+            <div class="accept-prod-first-row">
+              <span class="accept-prod-name">Guthias</span>
+              <span class="accept-prod-price">R$&nbsp;28.40</span>
+            </div>
+            <div class="second-row">
+              Mesa 02
+            </div>
+          </div>
+        </div>
+        <div class="accept-prod-detail">
+        <span class="info-prod-title">Endereço</span>
+        <span class="info-prod-text">
+          <ul>
+            Rua dos Bobos N°0, Bairro Maluco  
+          </ul>
+        </span>
 
         <span class="info-prod-title">Nome do Cliente</span>
         <span class="info-prod-text">Moteus o Brabo</span>
 
         <span class="info-prod-title">Telefone do Cliente</span>
         <span class="info-prod-text">(25) 4002-8922</span>
-        <!--
-        <span class="info-prod-title">Mesa</span>
-        <span class="info-prod-text">Mesa 01</span>
-        -->
-        <span class="info-prod-title">Endereço</span>
-        <span class="info-prod-text">
-          <ul>
-            <li>Rua dos Bobos N°0 </li>
-            <li>Bairro Maluco</li>
-            <li>Belo Horizonte - MG</li>
-          </ul>
-        </span>
+
         <span class="info-prod-title">Produtos</span>
         <span class="info-prod-text">
           <ul>
@@ -274,18 +291,62 @@
           </ul>
         </span>
 
-        <span class="info-prod-title">Observações</span>
-        <span class="info-prod-text obs">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="info-prod-title">Pagamento</span>
+            <span class="info-prod-text">
+              Dinheiro
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span class="info-prod-title">Valor</span>
+            <span class="info-prod-text">
+              R$&nbsp;58.60
+            </span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="edit-prod-footer">
+        <button class="main-button delete-button">Cancelar</button>
+        <button class="main-button accept-button">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="delivery-info" class="info-prod-bg hidden">
+    <div class="info-prod-area">
+      <div class="edit-prod-header">
+        <span class="edit-prod-header-title">Informações da Entrega</span>
+        <div id="delivery-close" class="edit-prod-close"></div>
+      </div>
+      <div class="edit-prod-body">
+        <span class="info-prod-title">Nome do Entregador</span>
+        <span class="info-prod-text">Carlos, Careca</span>
+
+        <span class="info-prod-title">Endereço</span>
+        <span class="info-prod-text">
           <ul>
-            <li>
-              <span class="obs-prod">Nome do produto:&nbsp;</span>Eu sou alergico ao ingrediente remova por favor :D
-            </li>
-            <li>
-              <span class="obs-prod">Nome do produto:&nbsp;</span>Eu sou alergico ao ingrediente remova por favor :D
-            </li>
-            <li>
-              <span class="obs-prod">Nome do produto:&nbsp;</span>Eu sou alergico ao ingrediente remova por favor :D
-            </li>
+            <li>Rua dos Bobos N°0 </li>
+            <li>Bairro Maluco</li>
+            <li>Belo Horizonte - MG</li>
+          </ul>
+        </span>
+
+        <span class="info-prod-title">Nome do Cliente</span>
+        <span class="info-prod-text">Moteus o Brabo</span>
+
+        <span class="info-prod-title">Telefone do Cliente</span>
+        <span class="info-prod-text">(25) 4002-8922</span>
+
+        <span class="info-prod-title">Produtos</span>
+        <span class="info-prod-text">
+          <ul>
+            <li>Helicoptero de Ataque</li>
+            <li>Oléo de Motor</li>
+            <li>Peixe</li>
+            <li>Vegano (x2)</li>
           </ul>
         </span>
 
@@ -305,8 +366,8 @@
         </div>
       </div>
       <div class="edit-prod-footer">
-        <button id="enviar-pedido" class="main-button delete-button">Cancelar</button>
-        <button id="enviar-pedido" class="main-button accept-button">Aceitar</button>
+        <button class="main-button delete-button">Cancelado</button>
+        <button class="main-button">Pedido Entregue</button>
       </div>
     </div>
   </div>
