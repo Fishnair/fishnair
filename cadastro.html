@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+</head>
+<body>
+  <div class="login-container">
+    <div class="cad-area">
+      <div class="login-header">Cadastro</div>
+      <div class="login-body">
+        <div class="row">
+          <div class="col-md-6">
+            <label class="login-text">E-mail</label>
+            <input class="login-input" type="email">
+
+            <label class="login-text">Telefone</label>
+            <input class="login-input" type="tel">
+
+            <label class="login-text">Senha</label>
+            <div class="password-input-area">
+              <input class="password-input" type="password" placeholder="Senha">
+              <button class="password-see">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+
+            <label class="login-text">Repita sua Senha</label>
+            <div class="password-input-area">
+              <input class="password-input" type="password" placeholder="Senha">
+              <button class="password-see">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="login-text">Nome</label>
+            <input class="login-input" type="text">
+
+            <label class="login-text">Data de Nascimento</label>
+            <input class="login-input" type="date">
+
+            <label class="login-text">Sexo</label>
+            <div class="input-select-area">
+              <select class="input-select">
+                <option>Selecione seu Sexo</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <a href="login.html" class="login-link">Já tenho conta</a>
+      </div>
+      <div class="login-footer">
+        <button class="main-button">Avançar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

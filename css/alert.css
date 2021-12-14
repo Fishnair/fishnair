@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.alert-bg{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  z-index: 2500;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  align-items: center;
+}
+.alert-area{
+  display: flex;
+  width: 680px;
+  margin:auto;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  border-radius: 8px;
+  max-height: 100%;
+  bottom: auto;
+  flex-direction: column;
+}
+/*alert Header*/
+.alert-header{
+  padding: 10px;
+  background-color:#192056;
+  height: 65px;
+}
+.alert-header-title{
+  font-size: 24px;
+  line-height: 45px;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+}
+/*alert Close*/
+.alert-close{
+  background-color: transparent;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-left: auto;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.alert-close:before, .alert-close:after{
+  content: '';
+  height: 5px;
+  width: 27px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  transition: all ease-in-out .2s;
+}
+.alert-close:hover:before,
+.alert-close:hover:after{
+  background-color: #4b82c3;
+}
+.alert-close:before{
+  transform: rotateZ(45deg);
+}
+.alert-close:after{
+  transform: rotateZ(-45deg);
+}
+
+/*alert Footer*/
+.alert-footer{
+  background-color:#192056;
+  padding: 10px;
+  text-align: center;
+}
+/*Body Edit Prod*/
+.alert-body{
+  padding: 16px;
+  height: auto;
+  max-height: calc(100% - 125px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+}
+.alert-content{
+  font-size: 18px;
+}
+.alert-button{
+  background-color:#4b82c3;
+  width: auto;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 16px;
+  user-select: none;
+  border-radius: 4px;
+  transition: all ease-in .3s;
+}
+.alert-button:hover{
+  background-color: #396dac;
+}
